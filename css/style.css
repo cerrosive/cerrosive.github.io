@@ -1,7 +1,7 @@
 /* ===== CUSTOM FONT ===== */
 @font-face {
   font-family: 'superRugged';
-  src: url('fonts/SuperRugged-4nBy9.ttf') format('ttf');
+  src: url('fonts/SuperRugged-4nBy9.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -18,7 +18,7 @@ body {
   font-family: 'Inter', sans-serif;
   background: #0a0a0a;
   color: #f0f0f0;
-  transition: margin-left 0.3s ease;
+  z-index: -2;
 }
 
 /* ===== GRID BACKGROUND ===== */
@@ -44,13 +44,23 @@ body {
 .nav-checkbox {
   display: none;
 }
+.nav-container {
+  position: fixed;
+  top: 0;
+  left: -300px; 
+  height: 100vh;
+  z-index: 1000;
+  transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  /* So tab sticks out from container */
+  overflow: visible;
+}
 
 .nav-tab {
-  position: fixed;
+  position: absolute;
   top: 50%;
-  left: 0;
+  left: 300px;
   transform: translateY(-50%);
-  z-index: 1001;
+  
   /* tab shape */
   width: 50px:
   height: 120px;
@@ -66,37 +76,17 @@ body {
   justify-content: center;
   /* interactive */
   cursor: pointer;
-  transition: all 0.3s ease;
-}
-.nav-tab:hover {
-  background: lineart-gradient(90deg, #222222 70%, rgba(34, 34, 34, 0.8));
-  transform: translateY(-50%) scale(1.05);
-  border-color: #00ffcc;
-}
-.tab-icon {
-  font-size: 24px;
-  color: #00ffcc;
-  transition: transform 0.3s ease;
 }
 
 .side-nav {
-  position: fixed;
-  top: 0;
-  left: -250px;
-  width: 250px;
-  height: 100vh;
+  width: 300px;
+  height: 100%;
   background: rgba(20, 20, 20, 0.95);
-  backdrop-filter: blue(10px);
-  z-index: 1000;
-  transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  
-  /* Glass effect */
-  backdrop-filter: blur(10px);
-  background: rgba(26, 26, 26, 0.95);
-    
-  /* Border that connects to tab */
+  nbackdrop-filter: blur(10px);
   border-right: 1px solid rgba(0, 255, 204, 0.3);
-  box-shadow: 5px 0 25px rgba(0, 0, 0, 0.5);
+
+  z-index: 1000;
+  box-shadow: 5px 0 25px rgba(0, 0, 0, 0.7);
     
   /* Flex layout for content */
   display: flex;
@@ -105,11 +95,8 @@ body {
 }
 
 /* NAV CONTROLS */
-.nav-checkbox:checked ~ .side-nav {
+.nav-checkbox:checked ~ .nav-container {
   left: 0;
-}
-.nav-checkbox:checked ~ .main-content {
-  margin-left: 300px;
 }
 
 /* nav content */
@@ -140,23 +127,25 @@ body {
 
 /* ===== MAIN CONTENT ===== */
 .main-content {
-  min-height: 100vh;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
   position: relative;
-  z-index: 1;
-  padding-left: 80px;
+  z-index: 1l
 }
 
 /* ===== HERO SECTION ===== */
 .hero {
-  min-height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   text-align: center;
-  padding: 20px;
 }
 .hero-content {
   max-width: 800px;
+  margin: 0 auto;
 }
 /* logo container */
 .logo-container {
@@ -168,7 +157,7 @@ body {
 }
 /* name */
 .name {
-  font-family: 'superRugged', sans-serif;
+  font-family: 'superRugged', 'Orbitron', sans-serif;
   font-size: clamp(3rem, 10vw, 5rem);
   font-weight: 700;
   margin-bottom: 10px;
