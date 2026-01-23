@@ -52,7 +52,7 @@ body {
 .nav-container {
   position: fixed;
   top: 0;
-  left: -250px; 
+  left: -275px; 
   height: 100vh;
   z-index: 1000;
   transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -70,7 +70,7 @@ body {
   width: 200px:
   height: 250px;
   background: #b8c6cf;
-  border-radius: 0 12px 12px 0;
+  border-radius: 0 5px 5px 0;
   border: 1px solid rgba(115, 115, 133, 1);
   border-left: none;
   /* connect navbar visually */
