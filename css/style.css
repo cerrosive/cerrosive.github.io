@@ -192,8 +192,8 @@ body {
   background: #151517;
   backdrop-filter: blur(10px);
   padding: 40px;
-  padding-left: 30%;
-  padding-right: 30%;
+  padding-left: 35%;
+  padding-right: 35%;
   border: 1px solid rgba(255, 255, 255, 0.1);
   min-height: 500px;
   width: 100%;
@@ -219,7 +219,7 @@ body {
   }
 
   .hello {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 300;
     color: #737385;
     margin-top: 10px;
@@ -227,7 +227,7 @@ body {
     text-transform: uppercase;
   }
   .hello-content {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 300;
     color: #737385;
     margin-top: 10px;
