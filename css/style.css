@@ -67,14 +67,14 @@ body {
   transform: translateY(-15%);
   
   /* tab shape */
-  width: 200px !important;
-  height: 250px !important;
+  width: 20px !important;
+  height: 25px !important;
   background: #b8c6cf;
   border-radius: 0 5px 5px 0;
   border: 1px solid rgba(115, 115, 133, 1);
   border-left: none;
   /* connect navbar visually */
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5), inset -2px 0 10px rgba(0, 255, 204, 0.1);
+  /* box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5), inset -2px 0 10px rgba(0, 255, 204, 0.1); */
   /* center icon */
   display: flex;
   align-items: center;
@@ -91,7 +91,7 @@ body {
   border-right: 1px solid rgba(115, 115, 133, 1);
 
   z-index: 1000;
-  box-shadow: 5px 0 25px rgba(0, 0, 0, 0.5);
+  /*box-shadow: 5px 0 25px rgba(0, 0, 0, 0.5); */
     
   /* Flex layout for content */
   display: flex;
