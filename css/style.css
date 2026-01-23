@@ -219,15 +219,16 @@ body {
   }
 
   .hello {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 300;
     color: #737385;
     margin-top: 10px;
     font-family: 'Space Mono', monospace;
     text-transform: uppercase;
+    text-align: center !important;
   }
   .hello-content {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 300;
     color: #737385;
     margin-top: 10px;
