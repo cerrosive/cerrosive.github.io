@@ -52,7 +52,7 @@ body {
 .nav-container {
   position: fixed;
   top: 0;
-  left: -300px; 
+  left: -250px; 
   height: 100vh;
   z-index: 1000;
   transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -64,11 +64,11 @@ body {
   position: absolute;
   top: 50%;
   left: 300px;
-  transform: translateY(-50%);
+  transform: translateY(-15%);
   
   /* tab shape */
-  width: 50px:
-  height: 120px;
+  width: 120px:
+  height: 180px;
   background: #b8c6cf;
   border-radius: 0 12px 12px 0;
   border: 1px solid rgba(115, 115, 133, 1);
