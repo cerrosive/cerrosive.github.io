@@ -127,7 +127,7 @@ body {
     gap: 10px;
 }
 .nav-link:hover {
-  background: rgba(0, 255, 204, 0.1);
+  background: #151517;
   border-left: 3px solid #737385;
   padding-left: 30px;
 }
