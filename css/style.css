@@ -189,7 +189,7 @@ body {
 /* ===== CONTENT SECTIONS ===== */
 
 /* hello section */
-.content-section {
+.hello-section {
   background: #151517;
   backdrop-filter: blur(10px);
   padding-top: 80px;
