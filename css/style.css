@@ -69,7 +69,7 @@ body {
   /* tab shape */
   width: 50px:
   height: 120px;
-  background: linear-gradient(90deg, #b8c6cf 70%, rgba(26, 26, 26, 0.8));
+  background: #b8c6cf;
   border-radius: 0 12px 12px 0;
   border: 1px solid rgba(115, 115, 133, 1);
   border-left: none;
@@ -88,10 +88,10 @@ body {
   height: 100%;
   color: #b8c6cf;
   nbackdrop-filter: blur(10px);
-  border-right: 1px solid rgba(0, 255, 204, 0.3);
+  border-right: 1px solid rgba(115, 115, 133, 1);
 
   z-index: 1000;
-  box-shadow: 5px 0 25px rgba(115, 115, 133, 1);
+  box-shadow: 5px 0 25px rgba(0, 0, 0, 0.5);
     
   /* Flex layout for content */
   display: flex;
