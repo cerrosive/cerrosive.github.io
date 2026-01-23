@@ -62,13 +62,13 @@ body {
 
 .nav-tab {
   position: absolute;
-  top: 50%;
+  top: 15%;
   left: 300px;
   transform: translateY(-15%);
   
   /* tab shape */
-  width: 120px:
-  height: 180px;
+  width: 200px:
+  height: 250px;
   background: #b8c6cf;
   border-radius: 0 12px 12px 0;
   border: 1px solid rgba(115, 115, 133, 1);
