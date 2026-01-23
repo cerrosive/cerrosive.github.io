@@ -239,6 +239,46 @@ body {
   }
 }
 
+/* spotlight section */
+.spotlight {
+  backdrop-filter: blur(10px);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 35%;
+  padding-right: 35%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-height: 500px;
+  width: 100%;
+  text-align: justify;
+}
+
+/* other projects section */
+.other-projects {
+  background: #737385;
+  backdrop-filter: blur(10px);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 35%;
+  padding-right: 35%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-height: 500px;
+  width: 100%;
+  text-align: justify;
+}
+
+/* contact forward section */
+.contact-forward {
+  backdrop-filter: blur(10px);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 35%;
+  padding-right: 35%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-height: 500px;
+  width: 100%;
+  text-align: justify;
+}
+
 
 
 
