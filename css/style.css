@@ -196,7 +196,7 @@ body {
   padding: 40px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   min-height: 500px;
-  width: 100%;
+  width: 100% !important;
 
 
   /* ===== RESPONSIVE DESIGN ===== */
