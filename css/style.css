@@ -157,7 +157,7 @@ body {
   margin-bottom: 30px;
 }
 .logo {
-  max-width: 200px;
+  max-width: 350px;
   height: auto;
 }
 /* name */
@@ -178,7 +178,7 @@ body {
   font-weight: 300;
   color: #737385;
   margin-top: 10px;
-  font-family: 'Space Mono', sans-serif;
+  font-family: 'Space Mono', monospace;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
