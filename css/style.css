@@ -166,7 +166,7 @@ body {
   font-size: clamp(3rem, 10vw, 5rem);
   font-weight: 700;
   margin-bottom: 10px;
-  background: b8c6cf;
+  color: #b8c6cf;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
