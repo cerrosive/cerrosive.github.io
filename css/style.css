@@ -183,7 +183,6 @@ body {
   color: #737385;
   margin-top: 10px;
   font-family: 'Space Mono', monospace;
-  letter-spacing: 3px;
   text-transform: uppercase;
 }
 
@@ -205,10 +204,6 @@ body {
       left: -200px;
     }
 
-    .main-content {
-      /* padding-left: 60px; */
-    }
-
     .nav-toggle {
       width: 40px;
       height: 40px;
@@ -218,10 +213,22 @@ body {
     .name {
       font-size: 2.5rem;
     }
+  }
 
-    .content-section {
-      /* padding: 20px; */
-    }
+  .hello {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #737385;
+    margin-top: 10px;
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+  }
+  .hello-content {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #737385;
+    margin-top: 10px;
+    font-family: 'Space Mono', monospace;
   }
 
 
