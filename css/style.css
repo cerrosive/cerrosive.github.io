@@ -67,8 +67,8 @@ body {
   transform: translateY(-15%);
   
   /* tab shape */
-  width: 200px:
-  height: 250px;
+  width: 200px !important;
+  height: 250px !important;
   background: #b8c6cf;
   border-radius: 0 5px 5px 0;
   border: 1px solid rgba(115, 115, 133, 1);
