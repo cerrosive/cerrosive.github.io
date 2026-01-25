@@ -248,7 +248,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
   min-height: 500px;
   width: 100%;
-  text-align: justify;
+  text-align: center;
 }
 .spotlight-header {
   font-size: 3.75rem;
@@ -276,7 +276,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
   min-height: 500px;
   width: 100%;
-  text-align: justify;
+  text-align: center;
 }
 .other-header {
   font-size: 3.75rem;
@@ -296,7 +296,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
   min-height: 500px;
   width: 100%;
-  text-align: justify;
+  text-align: center;
 }
 .contact-forward-header {
   font-size: 3.75rem;
