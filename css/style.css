@@ -250,6 +250,21 @@ body {
   width: 100%;
   text-align: justify;
 }
+.spotlight-header {
+  font-size: 3.75rem;
+  font-weight: 1000;
+  color: #b8c6cf;
+  margin-top: 10px;
+  font-family: 'Space Mono', monospace;
+  text-transform: uppercase;
+}
+.project-title {
+  font-size: 3rem;
+  font-weight: 1000;
+  color: #737385;
+  margin-top: 10px;
+  font-family: 'Space Mono', monospace;
+}
 
 /* other projects section */
 .other-projects {
@@ -263,6 +278,14 @@ body {
   width: 100%;
   text-align: justify;
 }
+.other-header {
+  font-size: 3.75rem;
+  font-weight: 1000;
+  color: #151517;
+  margin-top: 10px;
+  font-family: 'Space Mono', monospace;
+  text-transform: uppercase;
+}
 
 /* contact forward section */
 .contact-forward {
@@ -274,6 +297,14 @@ body {
   min-height: 500px;
   width: 100%;
   text-align: justify;
+}
+.contact-forward-header {
+  font-size: 3.75rem;
+  font-weight: 1000;
+  color: #b8c6cf;
+  margin-top: 10px;
+  font-family: 'Space Mono', monospace;
+  text-transform: uppercase;
 }
 
 
