@@ -243,8 +243,6 @@ body {
 .spotlight {
   padding-top: 80px;
   padding-bottom: 80px;
-  padding-left: 35%;
-  padding-right: 35%;
   border: 1px solid rgba(255, 255, 255, 0.1);
   min-height: 500px;
   width: 100%;
@@ -258,7 +256,7 @@ body {
   font-family: 'Space Mono', monospace;
   text-transform: uppercase;
 }
-.project-title {
+.spotlight-title {
   font-size: 3rem;
   font-weight: 1000;
   color: #737385;
@@ -271,8 +269,6 @@ body {
   background: #737385;
   padding-top: 80px;
   padding-bottom: 80px;
-  padding-left: 35%;
-  padding-right: 35%;
   border: 1px solid rgba(255, 255, 255, 0.1);
   min-height: 500px;
   width: 100%;
@@ -291,8 +287,6 @@ body {
 .contact-forward {
   padding-top: 80px;
   padding-bottom: 80px;
-  padding-left: 35%;
-  padding-right: 35%;
   border: 1px solid rgba(255, 255, 255, 0.1);
   min-height: 500px;
   width: 100%;
