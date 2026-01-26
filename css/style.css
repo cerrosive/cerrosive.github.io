@@ -336,8 +336,8 @@ body {
   display: inline-block;
   
   padding: 15px 30px;
-  color: #151517; /* text color */
-  background: #737385;
+  color: #737385; /* text color */
+  background: #151517;
   font-family: 'Space Mono', monospace;
   font-weight: bold;
   font-size: 2rem;
