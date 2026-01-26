@@ -427,8 +427,10 @@ body {
   text-align: centerl
 }
 .list-container {
-  width: fit-content;
-  align-items: center;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
 }
 .description-list {
   font-size: 1.5rem;
@@ -436,7 +438,6 @@ body {
   color: #b8c6cf;
   margin: 20px;
   font-family: 'Space Mono', monospace;
-  text-align: left;
 }
 
 
