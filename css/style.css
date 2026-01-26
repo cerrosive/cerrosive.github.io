@@ -334,39 +334,50 @@ body {
 .view-all-btn {
   position: relative;
   display: inline-block;
-  
-  padding: 15px 30px;
-  color: #737385; /* text color */
-  background: #151517;
-  font-family: 'Space Mono', monospace;
-  font-weight: bold;
-  font-size: 2rem;
-  text-align: center;
-  border: 4px solid #b8c6cf;
-
+  width: auto;
+  max-width: none;
+  margin: 0 auto;
   text-decoration: none;
   cursor: pointer;
-
-  transform: translate(0, 0);
-  transition: none;
-
-  user-select: none;
-  -webkit-user-select: none;
 }
 .view-all-btn::before {
   content: '';
   position: absolute;
-  top: 10;
-  left: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #737385;
+  border: 4px solid #b8c6cf;
+  transition: none;
+}
+.view-all-btn::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
   width: 100%;
   height: 100%;
   background: #b8c6cf;
   z-index: -1;
 }
-.view-all-btn:hover {
+.btn-text {
+  position: relative;
+  padding: 15px 30px;
+  color: 151517;
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  z-index: 2;
+  display: block;
+  transform: translate(0, 0);
+  transition: none;
+}
+.view-all-btn:hover .btn-text {
   transform: translate(5px, 5px);
 }
-.view-all-btn:active {
+.view-all-btn:active .btn-text {
   transform: translate(10px, 10px)
 }
 
