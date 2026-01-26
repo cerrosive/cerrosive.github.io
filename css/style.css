@@ -265,8 +265,20 @@ body {
 }
 /*game image */
 .featured-game {
-  width: 1000;
+  display: inline-block;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+.featured-game img {
+  width: 100%;
   height: auto;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+.featured-game:hover img {
+  transform: scale(1.02);
+  box-shadow: 0 10px 30px rgba(184, 198, 207, 0.2);
 }
 
 
