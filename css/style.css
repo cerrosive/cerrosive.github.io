@@ -262,53 +262,50 @@ body {
   color: #737385;
   font-family: 'Space Mono', monospace;
 }
-/*game image */
+/*game image and button animation */
 .featured-game {
   position: relative;
-  display: inline-block;
-  text-decoration: none;
-  cursor: pointer;
-  
+  display: block;
   width: 100%;
   max-width: 600px;
+
+  text-decoration: none;
+  cursor: pointer;
 }
 .featured-game::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
-  
   width: 100%;
   height: 100%;
-  
+  background:#b8c6cf
   transition: none;
 }
 .featured-game::after {
   content: '';
   position: absolute;
-  top: 8px;
-  left: 8px;
-  
+  top: 10px;
+  left: 10px;
   width: 100%;
   height: 100%;
-
   background: #b8c6cf;
   z-index: -1;
-
-  transition: none;
 }
 .featured-game img {
+  position: relative;
   width: 100%;
   height: auto;
+  object-fit: cover;
   border: 4px solid #b8c6cf;
-  box-shadow: 4px 4px #b8c6cf;
-  /* transition: all 0.3s ease; */
+  z-index: 2;
+  display: block;
 }
 .featured-game:hover::before {
-  transform: translate(4px, 4px);
+  transform: translate(5px, 5px);
 }
 .featured-game:active::before {
-  transform: translate(8px, 8px)
+  transform: translate(10px, 10px)
 }
 
 
