@@ -302,10 +302,10 @@ body {
   z-index: 2;
   display: block;
 }
-.featured-game:hover::before img {
+.featured-game:hover img {
   transform: translate(5px, 5px);
 }
-.featured-game:active::before img {
+.featured-game:active img {
   transform: translate(10px, 10px)
 }
 
