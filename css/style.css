@@ -333,50 +333,40 @@ body {
 /* portfolio button */
 .view-all-btn {
   position: relative;
-  display: block;
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
+  display: inline-block;
+  
+  padding: 15px 30px;
+  color: #151517; /* text color */
+  background: #737385;
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  border: 4px solid #b8c6cf;
 
   text-decoration: none;
   cursor: pointer;
+
+  transform: translate(0, 0);
+  transition: none;
+
+  user-select: none;
+  -webkit-user-select: none;
 }
 .view-all-btn::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: none;
-}
-.view-all-btn::after {
-  content: '';
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 10;
+  left: 10;
   width: 100%;
   height: 100%;
   background: #b8c6cf;
   z-index: -1;
 }
-.view-all-btn p {
-  position: relative;
-  font-size: 2rem;
-  font-weight: 500;
-  margin: 10px;
-  color: #151517;
-  font-family: 'Space Mono', monospace;
-  object-fit: cover;
-  background: #737385;
-  border: 4px solid #b8c6cf;
-  z-index: 2;
-  display: block;
-}
-.view-all-btn:hover::before {
+.view-all-btn:hover {
   transform: translate(5px, 5px);
 }
-.view-all-btn:active::before {
+.view-all-btn:active {
   transform: translate(10px, 10px)
 }
 
