@@ -264,11 +264,8 @@ body {
   font-family: 'Space Mono', monospace;
 }
 /*game image */
-.featured-game {
-
-}
 .featured-game-image {
-  width: 500;
+  width: 1000;
   height: auto;
 }
 
