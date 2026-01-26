@@ -263,10 +263,15 @@ body {
   margin-top: 10px;
   font-family: 'Space Mono', monospace;
 }
+/*game image */
+.featured-game {
+
+}
 .featured-game-image {
-  max-width: 500;
+  width: 500;
   height: auto;
 }
+
 
 /* other projects section */
 .other-projects {
@@ -286,6 +291,7 @@ body {
   font-family: 'Space Mono', monospace;
   text-transform: uppercase;
 }
+
 
 /* contact forward section */
 .contact-forward {
