@@ -427,8 +427,7 @@ body {
   text-align: centerl
 }
 .list-container {
-  width: 80%;
-  max-width: 800px;
+  width: fit-content;
   margin: 0 auto;
   text-align: left;
 }
