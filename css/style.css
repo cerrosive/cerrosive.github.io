@@ -347,8 +347,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #737385;
-  border: 4px solid #b8c6cf;
   transition: none;
 }
 .view-all-btn::after {
@@ -369,6 +367,8 @@ body {
   font-weight: bold;
   font-size: 2rem;
   text-align: center;
+  background: #737385;
+  border: 4px solid #b8c6cf;
   z-index: 2;
   display: block;
   transform: translate(0, 0);
