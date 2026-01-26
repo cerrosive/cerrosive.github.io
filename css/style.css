@@ -280,7 +280,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #b8c6cf;
   transition: none;
 }
 .featured-game::after {
