@@ -265,7 +265,7 @@ body {
 }
 /*game image */
 .featured-game-image {
-  width: 1000;
+  width: 1000 !important;
   height: auto;
 }
 
