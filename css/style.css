@@ -427,7 +427,7 @@ body {
   text-align: centerl
 }
 .list-container {
-  width: 100%;
+  width: fit-content;
 }
 .description-list {
   font-size: 1.5rem;
