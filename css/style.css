@@ -273,11 +273,12 @@ body {
   width: 100%;
   height: auto;
   border-radius: 12px;
+  border: 2px solid #b8c6cf;
   transition: all 0.3s ease;
 }
 .featured-game:hover img {
   transform: scale(1.02);
-  box-shadow: 0 10px 30px rgba(184, 198, 207, 0.2);
+  box-shadow: 2px 2px #b8c6cf;
 }
 
 
