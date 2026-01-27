@@ -199,7 +199,7 @@ body {
   /* So tab sticks out from container */
   overflow: visible;
 
-  mix-blend-mode: screen;
+  mix-blend-mode: lighten;
   backdrop-filter: blur(10px);
 }
 
@@ -220,7 +220,7 @@ body {
   /* interactive */
   cursor: pointer;
 
-  mix-blend-mode: screen;
+  mix-blend-mode: lighten;
   backdrop-filter: blur(10px);
 }
 .tab-icon {
