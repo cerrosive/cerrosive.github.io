@@ -322,7 +322,7 @@ body {
 .logo {
   max-width: 300px;
   height: auto;
-  animation: squigglevision 0,8s infinite alternate;
+  animation: squigglevision 0.8s infinite alternate;
 }
 /* name */
 .name {
@@ -335,7 +335,7 @@ body {
   background-clip: text;
   letter-spacing: 2px;
   
-  animation: squigglevision 0.8s infinite alternate;
+  animation: squigglevision 0.7s infinite alternate;
 }
 /* role title */
 .title {
