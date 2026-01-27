@@ -273,7 +273,7 @@ body {
 }
 
 /* resets */
-.side-nav, .nav-content, .nav-link {
+.side-nav, .nav-content, .nav-link, .nav-link:hover {
   mix-blend-mode: normal;
   backdrop-filter: none;
   position: relative;
