@@ -252,7 +252,7 @@ body {
 .side-nav {
   width: 300px;
   height: 100%;
-  background: #b8c6cf;
+  /* background: #b8c6cf; */
 
   z-index: 1000;
     
