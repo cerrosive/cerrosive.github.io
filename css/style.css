@@ -334,6 +334,8 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   letter-spacing: 2px;
+  
+  animation: squigglevision 0.4s infinite alternate;
 }
 /* role title */
 .title {
