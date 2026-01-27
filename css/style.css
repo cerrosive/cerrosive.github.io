@@ -192,7 +192,7 @@ body {
   pointer-events: none;
 
   background-color: #202024;
-  background-image: linear-gradient(#b8c6cf 4px, transparent 1px), linear-gradient(90deg, #b8c6cf 4px, transparent 1px);
+  background-image: linear-gradient(#b8c6cf 4px, transparent 10px), linear-gradient(90deg, #b8c6cf 4px, transparent 10px);
   background-size: 40px 40px;
 
   background-blend-mode: overlay;
@@ -418,7 +418,7 @@ body {
 }
 .description {
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: bold;
   color: #b8c6cf;
   margin-top: 20px;
   margin-left: 30%;
@@ -430,10 +430,9 @@ body {
   width: fit-content;
   margin: 0 auto;
   text-align: left;
-}
 .description-list {
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: bold;
   color: #b8c6cf;
   margin: 20px;
   font-family: 'Space Mono', monospace;
