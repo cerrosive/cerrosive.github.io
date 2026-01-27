@@ -16,11 +16,27 @@
   font-display: swap;
   }
 
+/* squiggle anim */
+@keyframes squigglevision {
+  0% {
+    filter: url("#turbulence-1");
+  }
+  25% {
+    filter: url("#turbulence-2");
+  }
+  50% {
+    filter: url("#turbulence-3");
+  }
+  75% {
+    filter: url("#turbulence-4");
+  }
+  100% {
+    filter: url("#turbulence-5");
+  }
+}
+
 
 /* ===== Button CSS ===== */
-
-/* colour variables */
-
 
 /* light text button */
 .light-text-btn {
@@ -307,22 +323,8 @@ body {
   max-width: 300px;
   height: auto;
 
-  @keyframes logo {
-    0% {
-      filter: url("#turbulence-1");
-    }
-    25% {
-      filter: url("#turbulence-2");
-    }
-    50% {
-      filter: url("#turbulence-3");
-    }
-    75% {
-      filter: url("#turbulence-4");
-    }
-    100% {
-      filter: url("#turbulence-5");
-    }
+  .squiggle {
+    animation: squigglevision 0.4s infinite alternate;
   }
 }
 /* name */
