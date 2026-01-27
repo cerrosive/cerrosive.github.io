@@ -227,6 +227,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1000;
   
   cursor: pointer;
 }
@@ -292,6 +293,13 @@ body {
   border-left: 3px solid #737385;
   padding-left: 30px;
 }
+
+/* resets */
+.side-nav, .nav-content, .nav-link {
+  mix-blend-mode: normal;
+  backdrop-filter: none;
+  position: relative;
+  z-index: 1000;
 
 
 /* ===== MAIN CONTENT ===== */
