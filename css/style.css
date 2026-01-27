@@ -200,6 +200,7 @@ body {
   overflow: visible;
 
   mix-blend-mode: screen;
+  backdrop-filter: blur(10px);
 }
 
 .nav-tab {
@@ -220,6 +221,7 @@ body {
   cursor: pointer;
 
   mix-blend-mode: screen;
+  backdrop-filter: blur(10px);
 }
 .tab-icon {
   color: #737385;
