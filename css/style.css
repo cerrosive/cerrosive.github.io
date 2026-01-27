@@ -200,8 +200,8 @@ body {
   /* So tab sticks out from container */
   overflow: visible;
 
+  mix-blend-mode: soft-light;
   backdrop-filter: blur(5px);
-  background: rgba(184, 198, 207, 0.5);
 }
 
 .nav-tab {
@@ -220,8 +220,8 @@ body {
   justify-content: center;
   z-index: 1000;
 
+  mix-blend-mode: soft-light;
   backdrop-filter: blur(5px);
-  background: rgba(184, 198, 207, 0.5);
   
   cursor: pointer;
 }
@@ -256,7 +256,7 @@ body {
   gap: 15px;
 }
 .nav-link {
-  color: #737385;
+  color: #151517;
   text-decoration: none;
   font-size: 1.1rem;
   padding: 15px 20px;
@@ -268,8 +268,7 @@ body {
   gap: 10px;
 }
 .nav-link:hover {
-  background: #151517;
-  border-left: 3px solid #737385;
+  background: #b8c6cf;
   padding-left: 30px;
 }
 
