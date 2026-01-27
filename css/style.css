@@ -361,7 +361,7 @@ body {
   min-height: 500px;
   width: 100%;
   text-align: justify;
-  align-items: center;
+  justify-content: center;
 
   /* ===== RESPONSIVE DESIGN ===== */
   @media (max-width: 768px) {
@@ -400,7 +400,7 @@ body {
   font-weight: 300;
   color: #737385;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-family: 'Space Mono', monospace;
 }
 
@@ -434,7 +434,7 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   color: #b8c6cf;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 30%;
   margin-right: 30%;
   font-family: 'Space Mono', monospace;
