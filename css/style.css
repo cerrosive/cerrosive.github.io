@@ -47,6 +47,8 @@
   margin: 0 auto;
   text-decoration: none;
   cursor: pointer;
+  
+  animation: squigglevision 0.8s infinite alternate;
 }
 .light-text-btn::before {
   content: '';
@@ -96,6 +98,8 @@
   margin: 0 auto;
   text-decoration: none;
   cursor: pointer;
+
+  animation: squigglevision 0.7s infinite alternate;
 }
 .dark-text-btn::before {
   content: '';
@@ -147,6 +151,8 @@
 
   text-decoration: none;
   cursor: pointer;
+
+  animation: squigglevision 0.9s infinite alternate;
 }
 .image-btn::before {
   content: '';
@@ -391,13 +397,14 @@ body {
   font-family: 'Space Mono', monospace;
   text-transform: uppercase;
   text-align: center !important;
+  align-items: center;
 }
 .hello-content {
   font-size: 2.15rem;
   font-weight: 300;
   color: #737385;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-family: 'Space Mono', monospace;
 }
 
