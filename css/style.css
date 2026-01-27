@@ -232,6 +232,7 @@ body {
 }
 .nav-tab::before {
   content: '';
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -290,15 +291,6 @@ body {
   background: #151517;
   border-left: 3px solid #737385;
   padding-left: 30px;
-}
-
-/* nav resets */
-.side-nav, .nav-content, .nav-link, .nav-tab {
-  mix-blend-mode: normal;
-  backdrop-filter: none;
-  position: relative;
-  background: transparent;
-  z-index: 1000;
 }
 
 
