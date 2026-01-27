@@ -192,7 +192,7 @@ body {
   pointer-events: none;
 
   background-color: #202024;
-  background-image: linear-gradient(#b8c6cf 4px, transparent 10px), linear-gradient(90deg, #b8c6cf 4px, transparent 10px);
+  background-image: linear-gradient(#b8c6cf 4px, transparent 0.1px), linear-gradient(90deg, #b8c6cf 4px, transparent 0.1px);
   background-size: 40px 40px;
 
   background-blend-mode: overlay;
@@ -331,11 +331,10 @@ body {
 /* role title */
 .title {
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: bold;
   color: #737385;
   margin-top: 10px;
   font-family: 'Space Mono', monospace;
-  text-transform: uppercase;
 }
 
 
