@@ -21,16 +21,16 @@
   0% {
     filter: url("#turbulence-2");
   }
-  25% {
+  20% {
     filter: url("#turbulence-5");
   }
-  50% {
+  40% {
     filter: url("#turbulence-3");
   }
-  75% {
+  60% {
     filter: url("#turbulence-4");
   }
-  90%, 100% {
+  80%, 100% {
     filter: url("#turbulence-1");
   }
 }
