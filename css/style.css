@@ -47,8 +47,6 @@
   margin: 0 auto;
   text-decoration: none;
   cursor: pointer;
-  
-  animation: squigglevision 0.8s infinite alternate;
 }
 .light-text-btn::before {
   content: '';
@@ -98,8 +96,6 @@
   margin: 0 auto;
   text-decoration: none;
   cursor: pointer;
-
-  animation: squigglevision 0.7s infinite alternate;
 }
 .dark-text-btn::before {
   content: '';
@@ -151,8 +147,6 @@
 
   text-decoration: none;
   cursor: pointer;
-
-  animation: squigglevision 0.9s infinite alternate;
 }
 .image-btn::before {
   content: '';
@@ -367,6 +361,7 @@ body {
   min-height: 500px;
   width: 100%;
   text-align: justify;
+  align-items: center;
 
   /* ===== RESPONSIVE DESIGN ===== */
   @media (max-width: 768px) {
@@ -397,7 +392,8 @@ body {
   font-family: 'Space Mono', monospace;
   text-transform: uppercase;
   text-align: center !important;
-  align-items: center;
+
+  animation: squigglevision 0.8s infinite alternate;
 }
 .hello-content {
   font-size: 2.15rem;
@@ -424,6 +420,8 @@ body {
   margin-top: 10px;
   font-family: 'Space Mono', monospace;
   text-transform: uppercase;
+
+  animation: squigglevision 0.7s infinite alternate;
 }
 .spotlight-title {
   font-size: 3rem;
@@ -474,6 +472,8 @@ body {
   margin-top: 10px;
   font-family: 'Space Mono', monospace;
   text-transform: uppercase;
+
+  animation: squigglevision 0.8s infinite alternate;
 }
 /* carousel */
 
@@ -495,6 +495,8 @@ body {
   margin-top: 10px;
   font-family: 'Space Mono', monospace;
   text-transform: uppercase;
+
+  animation: squigglevision 0.7s infinite alternate;
 }
 
 
