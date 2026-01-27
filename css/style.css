@@ -307,7 +307,7 @@ body {
   max-width: 300px;
   height: auto;
 
-  @keyframes squigglevision {
+  @keyframes logo {
     0% {
       filter: url("#turbulence-1");
     }
