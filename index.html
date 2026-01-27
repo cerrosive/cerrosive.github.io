@@ -7,13 +7,33 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <!--particles-->
-  <div class="particles">
-	<div id='stars'></div>
-	<div id='stars2'></div>
-	<div id='stars3'></div>
-	<div id='stars4'></div>
-  </div><!-- / STAR ANIMATION -->
+	<!--squiggle anim-->
+  <svg>
+  	<filter id="turbulence-1">
+    	<feTurbulence type="fractalNoise" baseFrequency="0.001" numOctaves="2" data-filterId="3" />
+    	<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+  	</filter>
+
+  	<filter id="turbulence-2">
+    	<feTurbulence type="fractalNoise" baseFrequency="0.0015" numOctaves="2" data-filterId="3" />
+    	<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+  	</filter>
+
+  	<filter id="turbulence-3">
+    	<feTurbulence type="fractalNoise" baseFrequency="0.002" numOctaves="2" data-filterId="3" />
+    	<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+  	</filter>
+
+  	<filter id="turbulence-4">
+    	<feTurbulence type="fractalNoise" baseFrequency="0.0025" numOctaves="2" data-filterId="3" />
+    	<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+  	</filter>
+
+  	<filter id="turbulence-5">
+    	<feTurbulence type="fractalNoise" baseFrequency="0.003" numOctaves="2" data-filterId="3" />
+    	<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+  	</filter>
+	</svg>
 
   <!--left navbar-->
   <input type="checkbox" id="nav-toggle" class="nav-checkbox">
@@ -106,35 +126,8 @@
         <div class="light-btn-text">Socials and contact info this way!</div>
       </a>
     </section>
-
+	  
   </main>
-<svg>
-  <filter id="turbulence-1">
-    <feTurbulence type="fractalNoise" baseFrequency="0.001" numOctaves="2" data-filterId="3" />
-    <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
-  </filter>
-
-  <filter id="turbulence-2">
-    <feTurbulence type="fractalNoise" baseFrequency="0.0015" numOctaves="2" data-filterId="3" />
-    <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
-  </filter>
-
-  <filter id="turbulence-3">
-    <feTurbulence type="fractalNoise" baseFrequency="0.002" numOctaves="2" data-filterId="3" />
-    <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
-  </filter>
-
-  <filter id="turbulence-4">
-    <feTurbulence type="fractalNoise" baseFrequency="0.0025" numOctaves="2" data-filterId="3" />
-    <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
-  </filter>
-
-  <filter id="turbulence-5">
-    <feTurbulence type="fractalNoise" baseFrequency="0.003" numOctaves="2" data-filterId="3" />
-    <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
-  </filter>
-
-</svg>
 </html>
         
 
