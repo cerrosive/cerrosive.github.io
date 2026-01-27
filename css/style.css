@@ -195,8 +195,6 @@ body {
   background-color: #202024;
   background-image: linear-gradient(rgb(40, 42, 45) 4px, transparent 1px), linear-gradient(90deg, rgb(40, 42, 45) 4px, transparent 1px);
   background-size: 40px 40px;
-
-  /* background-blend-mode: overlay; */
 }
 
 
@@ -227,11 +225,6 @@ body {
   height: 30px !important;
   background: #b8c6cf;
   border-radius: 0 5px 5px 0;
-  /* border: 1px solid rgba(115, 115, 133, 1); */
-  /* border-left: none; */
-  /* connect navbar visually */
-  /* box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5), inset -2px 0 10px rgba(0, 255, 204, 0.1); */
-  /* center icon */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -247,10 +240,8 @@ body {
   height: 100%;
   background: #b8c6cf;
   backdrop-filter: blur(10px);
-  /* border-right: 1px solid rgba(115, 115, 133, 1); */
 
   z-index: 1000;
-  /*box-shadow: 5px 0 25px rgba(0, 0, 0, 0.5); */
     
   /* Flex layout for content */
   display: flex;
@@ -271,16 +262,16 @@ body {
   gap: 15px;
 }
 .nav-link {
-    color: #737385;
-    text-decoration: none;
-    font-size: 1.1rem;
-    padding: 15px 20px;
-    border-radius: 8px;
-    transition: all 0.3s;
-    border-left: 3px solid transparent;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  color: #737385;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 15px 20px;
+  border-radius: 8px;
+  transition: all 0.3s;
+  border-left: 3px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .nav-link:hover {
   background: #151517;
