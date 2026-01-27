@@ -18,20 +18,20 @@
 
 /* squiggle anim */
 @keyframes squigglevision {
-  0%, 100% {
-    filter: url("#turbulence-1");
-  }
-  0%, 100% {
+  0% {
     filter: url("#turbulence-2");
   }
-  0%, 100% {
+  25% {
+    filter: url("#turbulence-5");
+  }
+  50% {
     filter: url("#turbulence-3");
   }
-  0%, 100% {
+  75% {
     filter: url("#turbulence-4");
   }
-  0%, 100% {
-    filter: url("#turbulence-5");
+  100% {
+    filter: url("#turbulence-1");
   }
 }
 
