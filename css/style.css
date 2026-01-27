@@ -38,7 +38,77 @@
 
 /* ===== Button CSS ===== */
 
-/* light text button */
+.text-btn {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  max-width: none;
+  margin: 0 auto;
+  text-decoration: none;
+  cursor: pointer;
+}
+.text-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: none;
+}
+.text-btn::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  background: #b8c6cf;
+}
+.light-btn-text {
+  position: relative;
+  padding: 15px 30px;
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  color: #151517;
+  background: #737385;
+  border: 4px solid #b8c6cf;
+  z-index: 2;
+  display: block;
+  transform: translate(0, 0);
+  transition: none;
+}
+.dark-btn-text {
+  position: relative;
+  padding: 15px 30px;
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  color: #737385;
+  background: #151517;
+  border: 4px solid #b8c6cf;
+  z-index: 2;
+  display: block;
+  transform: translate(0, 0);
+  transition: none;
+}
+.light-text-btn:hover .light-btn-text {
+  transform: translate(5px, 5px);
+}
+.light-text-btn:active .light-btn-text {
+  transform: translate(10px, 10px);
+}
+.text-btn:hover .dark-btn-text {
+  transform: translate(5px, 5px);
+}
+.text-btn:active .dark-btn-text {
+  transform: translate(10px, 10px);
+}
+
+/* light text button 
 .light-text-btn {
   position: relative;
   display: inline-block;
@@ -86,8 +156,9 @@
 }
 .light-text-btn:active .light-btn-text {
   transform: translate(10px, 10px);
-}
-/* dark text button */
+} */
+
+/* dark text button 
 .dark-text-btn {
   position: relative;
   display: inline-block;
@@ -135,7 +206,7 @@
 }
 .dark-text-btn:active .dark-btn-text {
   transform: translate(10px, 10px);
-}
+} */
 
 /* image button */
 .image-btn {
@@ -226,6 +297,8 @@ body {
   transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   /* So tab sticks out from container */
   overflow: visible;
+
+  background-blend-mode: overlay;
 }
 
 .nav-tab {
@@ -244,6 +317,8 @@ body {
   justify-content: center;
   /* interactive */
   cursor: pointer;
+
+  background-blend-mode: overlay;
 }
 .tab-icon {
   color: #737385;
@@ -493,6 +568,7 @@ body {
   font-weight: 1000;
   color: #737385;
   margin-top: 10px;
+  margin-bottom: 10px;
   font-family: 'Space Mono', monospace;
   text-transform: uppercase;
 
