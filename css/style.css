@@ -196,7 +196,7 @@ body {
   background-image: linear-gradient(rgb(40, 42, 45) 4px, transparent 1px), linear-gradient(90deg, rgb(40, 42, 45) 4px, transparent 1px);
   background-size: 40px 40px;
 
-  background-blend-mode: overlay;
+  /* background-blend-mode: overlay; */
 }
 
 
