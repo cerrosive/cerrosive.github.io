@@ -70,7 +70,7 @@
   transform: translate(5px, 5px);
 }
 .light-text-btn:active .light-btn-text {
-  transform: translate(10px, 10px)
+  transform: translate(10px, 10px);
 }
 /* dark text button */
 .dark-text-btn {
@@ -120,7 +120,7 @@
   transform: translate(5px, 5px);
 }
 .dark-text-btn:active .dark-btn-text {
-  transform: translate(10px, 10px)
+  transform: translate(10px, 10px);
 }
 
 /* image button */
@@ -165,7 +165,7 @@
   transform: translate(5px, 5px);
 }
 .image-btn:active img {
-  transform: translate(10px, 10px)
+  transform: translate(10px, 10px);
 }
 
 
@@ -424,7 +424,7 @@ body {
   margin-left: 30%;
   margin-right: 30%;
   font-family: 'Space Mono', monospace;
-  text-align: centerl
+  text-align: center;
 }
 .list-container {
   width: fit-content;
