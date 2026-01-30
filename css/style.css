@@ -253,7 +253,7 @@ body {
 .tab-background {
   position: fixed;
   top: 15%;
-  left: -280px;
+  left: 20px;
   width: 25px !important;
   height: 30px !important;
   border-radius: 0 5px 5px 0;
