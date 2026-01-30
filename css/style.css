@@ -271,6 +271,12 @@ body {
 .nav-checkbox:checked ~ .nav-container {
   left: 0;
 }
+.nav-checkbox:checked ~ .nav-background {
+  left: 0;
+}
+.nav-checkbox:checked ~ .tab-background {
+  left: 0;
+}
 
 /* nav content */
 .nav-content {
