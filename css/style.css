@@ -251,7 +251,7 @@ body {
   -webkit-backdrop-filter: blur(5px);
 }
 .tab-background {
-  position: fixed;
+  position: absolute;
   top: 15%;
   left: 280px;
   width: 25px !important;
@@ -262,9 +262,11 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 999;
+  transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
   mix-blend-mode: soft-light;
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 /* NAV CONTROLS */
