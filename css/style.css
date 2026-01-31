@@ -497,7 +497,97 @@ body {
 
   animation: squigglevision 0.8s infinite alternate;
 }
+
+
 /* carousel */
+.carousel-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+}
+.projects-carousel {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding: 20px 0;
+}
+.projects-carousel::-webkit-scrollbar {
+  display: none;
+}
+.project-slide:hover {
+  transform: translateY(-10px);
+}
+.project-image {
+  position: relative;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(21, 21, 23, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.project-slide:hover .project-overlay {
+  opacity: 1;
+}
+.project-overlay span {
+  color: #b8c6cf;
+  font-weight: bold;
+  border: 2px solid #b8c6cf;
+  padding: 10px 20px;
+}
+.project-name {
+  color: #b8c6cf;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  font-family: 'Space Mono', monospace;
+}
+.project-type {
+  color: #737385;
+  font-size: 0.9rem;
+}
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(21, 21, 23, 0.8);
+  color: #b8c6cf;
+  border: 2px solid #737385;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+.carousel-btn:hover {
+  background: #b8c6cf;
+  color: #151517;
+  border-color: #b8c6cf;
+}
+.carousel-btn.prev {
+  left: -25px;
+}
+.carousel-btn.next {
+  right: -25px;
+}
 
 
 
