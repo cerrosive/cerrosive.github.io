@@ -521,7 +521,8 @@ body {
 }
 .project-image {
   position: relative;
-  aspect-ratio: 16/9;
+  height: 800px;
+  width: auto;
   overflow: hidden;
   margin-bottom: 15px;
 }
