@@ -578,9 +578,9 @@ body {
   color: #151517;
   transform: scale(1.3);
 }
-/* .radio:focus, .nav-button:focus {
+.radio:focus, .nav-button:focus {
   outline: none;
-} */
+} 
 
 
 /* contact forward section */
