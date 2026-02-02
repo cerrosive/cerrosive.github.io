@@ -515,7 +515,6 @@ body {
 .carousel {
   display: flex;
   width: 300%; /* 3 slides x 100 */
-  animation: slides 20s infinite linear;
   transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .carousel-container:hover .carousel {
@@ -574,44 +573,6 @@ body {
 #slide3:checked ~ .carousel {
   transform: translateX(-66.666%);
 }
-/* movement */
-@keyframes slides {
-  0%, 28% {
-    transform: translateX(0%);
-  }
-  33%, 61% {
-    transform: translateX(-33.333%);
-  }
-  66%, 94% {
-    transform: translateX(-66.666%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-/* slide indicators */
-/*.indicators {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 15px;
-  z-index: 10;
-}
-.indicators label {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background: rgba(184, 198, 207, 0.4);
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-}
-.indicators label:hover {
-  background: rgba(184, 198, 207, 0.8);
-  transform: scale(1.2);
-}*/
 
 #slide1:target ~ .carousel-buttons .radio[href=#slide1], #slide2:target ~ .carousel-buttons .radio[href#slide2], #slide3:target ~ .carousel-buttons .radio[href#slide3] {
   color: #151517;
