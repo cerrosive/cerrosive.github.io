@@ -115,52 +115,46 @@
     <section class="other-projects">
       <h1 class="other-header">other projects</h1>
 
+	  <!--carousel-->
       <div class="carousel-container">
-        <button class="carousel-btn prev" aria-label="Next project">‹</button>
         
-        <div class="projects-carousel">
-        	<!-- project 1 -->
-			<a href="#game1" class="project-slide">
-            	<div class="project-image">
-                	<img src="images/A2 cover.png" alt="project 1 cover">
-                    <div class="project-overlay">
-                    	<span>View Project</span>
-                    </div>
-                </div>
-                <h3 class="project-name">project 1</h3>
-                <p class="project-type">genre - engine</p>
-            </a>
-            
-            <!-- project 2 -->
-			<a href="#game1" class="project-slide">
-            	<div class="project-image">
-                	<img src="images/A2 cover.png" alt="project 2 cover">
-                    <div class="project-overlay">
-                    	<span>View Project</span>
-                    </div>
-                </div>
-                <h3 class="project-name">project 2</h3>
-                <p class="project-type">genre - engine</p>
-            </a>
-            
-            <!-- project 3 -->
-			<a href="#game1" class="project-slide">
-            	<div class="project-image">
-                	<img src="images/A2 cover.png" alt="project 3 cover">
-                    <div class="project-overlay">
-                    	<span>View Project</span>
-                    </div>
-                </div>
-                <h3 class="project-name">project 3</h3>
-                <p class="project-type">genre - engine</p>
-            </a>
-        </div>
+        <div class="carousel">
+			<!--slide 1-->
+			<div class="slide">
+				<a href="#project1" class="image-btn">
+        			<img src="images/A2 cover.png" alt="project 1">
+      			</a>
+			</div>
+			<!--slide 2-->
+			<div class="slide">
+				<a href="#project2" class="image-btn">
+        			<img src="images/A2 cover.png" alt="project 2">
+      			</a>
+			</div>
+			<!--slide 3-->
+			<div class="slide">
+				<a href="#project3" class="image-btn">
+        			<img src="images/A2 cover.png" alt="project 3">
+      			</a>
+			</div>
+		</div>
+
+		<!--carousel buttons-->
+		<div class="carousel-buttons">
+			<label class="prev" for="slide3">‹</label>
+			<label class="next" for="slide2">›</label>
+
+			<div class="indicators">
+				<label for="slide1"></label>
+				<label for="slide2"></label>
+				<label for="slide3"></label>
+			</div>
+		</div>
         
-        <button class="carousel-btn next" aria-label="Next project">›</button>
-        
-        <div class="carousel-dots">
-        	<!--add dots ltr-->
-        </div>
+        <!--radio buttons-->
+		<input type="radio" name="carousel" id="slide1" class="carousel-radio">
+		<input type="radio" name="carousel" id="slide2" class="carousel-radio">
+		<input type="radio" name="carousel" id="slide3" class="carousel-radio">
       </div>
 
       
