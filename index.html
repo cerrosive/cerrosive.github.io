@@ -172,12 +172,28 @@
 	  </main>
 	  <!--javascript for carousel-->
 	  <script>
-		  document.querySelectorAll('.carousel-buttons label').forEach(button => {
-			  button.addEventListener('clicl', function() {
-				  const targetId = this.getAttribute('for');
-				  document.getElementById(targetId).checked = true;
-			  });
+		  const radios = document.querySelectorAll('.carousel-radio');
+		  const prevBtn = document.querySelector('.prev');
+		  const nextBtn = document.querySelector('.next');
+
+		  radios.forEach(radio => {
+			  radio.addEventListener('change', updateArrows);
 		  });
+
+		  function updateArrows() {
+			  let currentIndex = 0;
+			  radios.forEach((radio, index) => {
+				  if (radio.checked) currentIndex = index;
+			  });
+
+			  const total = radios.length;
+			  const prevIndex = (currentIndex - 1 + total) % total;
+			  const nextIndex = (currentIndex + 1) % total;
+
+			  prevBtn.setAttribute('for', `slide${prevIndex + 1}`);
+			  nextBtn.SetAttribute('for', `slide${nextIndex + 1}`);
+		  }
+		  updateArrows();
 	  </script>
   </body>
 </html>
