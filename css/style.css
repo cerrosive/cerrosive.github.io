@@ -570,8 +570,23 @@ body {
 #slide3:target ~ .carousel {
   transform: translateX(-66.666%);
 }
+/* movement */
+@keyframes slides {
+  0%, 28% {
+    transform: translateX(0%);
+  }
+  33%, 61% {
+    transform: translateX(-33.333%);
+  }
+  66%, 94% {
+    transform: translateX(-66.666%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 /* slide indicators */
-.indicators {
+/*.indicators {
   position: absolute;
   bottom: 30px;
   left: 50%;
@@ -592,7 +607,8 @@ body {
 .indicators label:hover {
   background: rgba(184, 198, 207, 0.8);
   transform: scale(1.2);
-}
+}*/
+
 #slide1:target ~ .carousel-buttons .radio[href=#slide1], #slide2:target ~ .carousel-buttons .radio[href#slide2], #slide3:target ~ .carousel-buttons .radio[href#slide3] {
   color: #151517;
   transform: scale(1.3);
