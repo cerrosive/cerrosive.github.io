@@ -117,12 +117,6 @@
 
 	  <!--carousel-->
       <div class="carousel-container">
-
-		<!--radio buttons-->
-		<input type="radio" name="carousel" id="slide1" class="carousel-radio">
-		<input type="radio" name="carousel" id="slide2" class="carousel-radio">
-		<input type="radio" name="carousel" id="slide3" class="carousel-radio">
-        
         <div class="carousel">
 			<!--slide 1-->
 			<div class="slide">
@@ -146,8 +140,16 @@
 
 		<!--carousel buttons-->
 		<div class="carousel-buttons">
-			<label class="prev" for="slide3">‹</label>
-			<label class="next" for="slide2">›</label>
+			<a href="#slide3" class="nav-btn-prev">‹</a>
+
+			<!--radio buttons-->
+			<div class="radio-buttons">
+				<a href="#slide1" class="radio-active">⦿</a>
+				<a href="#slide2" class="radio-active">〇</a>
+				<a href="#slide3" class="radio-active">〇</a>
+			</div>
+			
+			<a href="#slide3" class="nav-btn-next">›</a>
 
 			<div class="indicators">
 				<label for="slide1"></label>
