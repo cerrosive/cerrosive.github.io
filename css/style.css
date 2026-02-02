@@ -526,7 +526,7 @@ body {
   height: 500px;
   object-fit: cover;
   display: block;
-  transition: transform 0.5s ease;
+  /* transition: transform 0.5s ease; */
 }
 /* carousel nav buttons */
 .carousel-buttons {
@@ -563,6 +563,7 @@ body {
 /* radio buttons */
 .carousel-radio {
   display: none;
+  margin-top: 50%;
 }
 #slide1:checked ~ .carousel {
   animation: none;
@@ -627,7 +628,7 @@ body {
   transform: scale(1.2);
 }
 
-.carousel-track {
+.carousel {
   animation: slide 40s infinite linear, fadeIn 1s ease;
 }
 
