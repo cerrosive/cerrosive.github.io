@@ -508,6 +508,10 @@ body {
   padding-bottom: 20px;
   margin: 0 auto;
 }
+.carousel-radio {
+  display: none;
+  position: absolute;
+}
 .carousel {
   display: flex;
   width: 300%; /* 3 slides x 100 */
@@ -561,13 +565,13 @@ body {
   border: 2px solid rgba(184, 198, 207, 1);
 }
 /* navigation */
-#slide1:target ~ .carousel {
+#slide1:checked ~ .carousel {
   transform: translateX(0%);
 }
-#slide2:target ~ .carousel {
+#slide2:checked ~ .carousel {
   transform: translateX(-33.333%);
 }
-#slide3:target ~ .carousel {
+#slide3:checked ~ .carousel {
   transform: translateX(-66.666%);
 }
 /* movement */
