@@ -501,93 +501,121 @@ body {
 
 /* carousel */
 .carousel-container {
+  width: 900px;
+  ma-width: 95%;
   position: relative;
-  max-width: 1200px;
-  margin: 0 auto 40px;
-}
-.projects-carousel {
-  display: flex;
-  gap: 30px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-  padding: 20px 0;
-}
-.projects-carousel::-webkit-scrollbar {
-  display: none;
-}
-.project-slide:hover {
-  transform: translateY(-10px);
-}
-.project-image {
-  position: relative;
-  height: 300px;
-  aspect-ratio: 16/9;
   overflow: hidden;
-  margin-bottom: 15px;
 }
-.project-image img {
+.carousel {
+  display: flex;
+  width: 300%; /* 3 slides x 100 */
+  animation: slides 40s infinite linear;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.carousel-container:hover .carousel {
+  animation-play-state: paused;
+}
+/* slide */
+.slide {
   width: 100%;
-  height: 100%;
+  height: 500%;
   object-fit: cover;
+  display: block;
   transition: transform 0.5s ease;
 }
-.project-overlay {
+/* carousel nav buttons */
+.carousel-buttons {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
   width: 100%;
-  height: 100%;
-  background: rgba(21, 21, 23, 0.8);
+  display: flex;
+  justify-content: space-between;
+  tranform: translateY(-50%);
+  pointer-events: none;
+  z-index: 10;
+  padding: 0 10px;
+}
+.carousel-buttons label {
+  background: rgba(21, 21, 23, 0.2);
+  color: #b8c6cf;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.project-slide:hover .project-overlay {
-  opacity: 1;
-}
-.project-overlay span {
-  color: #b8c6cf;
-  font-weight: bold;
-  border: 2px solid #b8c6cf;
-  padding: 10px 20px;
-}
-.project-name {
-  color: #b8c6cf;
-  font-size: 1.3rem;
-  margin-bottom: 5px;
-  font-family: 'Space Mono', monospace;
-}
-.project-type {
-  color: #737385;
-  font-size: 0.9rem;
-}
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(21, 21, 23, 0.8);
-  color: #b8c6cf;
-  border: 2px solid #737385;
-  width: 50px;
-  height: 50px;
-  font-size: 1.5rem;
   cursor: pointer;
-  z-index: 10;
+  font-size: 2rem;
+  font-weight: bold;
+  pointer-events: auto;
   transition: all 0.3s ease;
+  border: 2px solid rgba(184, 198, 207, 0.3);
 }
-.carousel-btn:hover {
-  background: #b8c6cf;
-  color: #151517;
+.carousel-buttons label:hover {
+  background: #151517;
+  border: 2px solid rgba(184, 198, 207, 1);
+}
+/* radio buttons */
+.carousel-radio {
+  display: none;
+}
+#slide1:checked ~ .carousel {
+  animation: none;
+  transform: translateX(0%);
+}
+#slide2:checked ~ .carousel {
+  animation: none;
+  transform: translateX(-33.3%);
+}
+#slide3:checked ~ .carousel {
+  animation: none;
+  transform: translateX(-66.6%);
+}
+/* update nav button targets */
+#slide1:checked ~ .carousel .prev { for: slide3; }
+#slide1:checked ~ .carousel .next { for: slide2; }
+
+#slide2:checked ~ .carousel .prev { for: slide1; }
+#slide2:checked ~ .carousel .next { for: slide3; }
+
+#slide3:checked ~ .carousel .prev { for: slide2; }
+#slide3:checked ~ .carousel .next { for: slide1; }
+/* slide anim */
+/*@keyframes slide {
+  0% {
+    transform */
+/* slide indicators */
+.indicators {
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  z-index: 10;
+}
+.indicators label {
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  background: rgba(184, 198, 207, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+.indicators label:hover {
+  background: rgba(184, 198, 207, 0.8);
+  transform: scale(1.2);
+}
+/* highlight active indicator */
+#slide1:checked ~ indicators label[for="slide1"], #slide2:checked ~ indicators label[for="slide2"], #slide3:checked ~ indicators label[for="slide3"] {
+  background: #737385;
   border-color: #b8c6cf;
+  transform: scale(1.2);
 }
-.carousel-btn.prev {
-  left: -25px;
-}
-.carousel-btn.next {
-  right: -25px;
+
+.carousel-track {
+  animation: slide 40s infinite linear, fadeIn 1s ease;
 }
 
 
