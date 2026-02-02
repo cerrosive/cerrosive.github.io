@@ -7,171 +7,179 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   
-  <!--squiggle anim-->
-  <svg style="position: absolute; width: 0; height: 0; overflow: hidden;">
-  	<filter id="turbulence-1">
-    	<feTurbulence type="fractalNoise" baseFrequency="0.001" numOctaves="2" data-filterId="3" />
-    	<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
-  	</filter>
+  <body>
+	<!--squiggle anim-->
+  		<svg style="position: absolute; width: 0; height: 0; overflow: hidden;">
+  			<filter id="turbulence-1">
+    			<feTurbulence type="fractalNoise" baseFrequency="0.001" numOctaves="2" data-filterId="3" />
+    			<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+  			</filter>
 
-  	<filter id="turbulence-2">
-    	<feTurbulence type="fractalNoise" baseFrequency="0.0015" numOctaves="2" data-filterId="3" />
-    	<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
-  	</filter>
+  			<filter id="turbulence-2">
+    			<feTurbulence type="fractalNoise" baseFrequency="0.0015" numOctaves="2" data-filterId="3" />
+    			<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+  			</filter>
 
-  	<filter id="turbulence-3">
-    	<feTurbulence type="fractalNoise" baseFrequency="0.002" numOctaves="2" data-filterId="3" />
-    	<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
-  	</filter>
+  			<filter id="turbulence-3">
+    			<feTurbulence type="fractalNoise" baseFrequency="0.002" numOctaves="2" data-filterId="3" />
+    			<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+  			</filter>
 
-  	<filter id="turbulence-4">
-    	<feTurbulence type="fractalNoise" baseFrequency="0.0025" numOctaves="2" data-filterId="3" />
-    	<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
-  	</filter>
+  			<filter id="turbulence-4">
+    			<feTurbulence type="fractalNoise" baseFrequency="0.0025" numOctaves="2" data-filterId="3" />
+    			<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+  			</filter>
 
-  	<filter id="turbulence-5">
-    	<feTurbulence type="fractalNoise" baseFrequency="0.003" numOctaves="2" data-filterId="3" />
-    	<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
-  	</filter>
-	</svg>
+  			<filter id="turbulence-5">
+    			<feTurbulence type="fractalNoise" baseFrequency="0.003" numOctaves="2" data-filterId="3" />
+    			<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+  			</filter>
+		</svg>
 
-  <!--left navbar-->
-  <input type="checkbox" id="nav-toggle" class="nav-checkbox">
+  		<!--left navbar-->
+  		<input type="checkbox" id="nav-toggle" class="nav-checkbox">
 
-  <div class="nav-container">
-    <!--button for navbar-->
-    <label for="nav-toggle" class="nav-tab">
-      <span class="tab-icon">☰</span>
-    </label>
+  		<div class="nav-container">
+    	<!--button for navbar-->
+    	<label for="nav-toggle" class="nav-tab">
+      		<span class="tab-icon">☰</span>
+    	</label>
 
-    <!--actual navbar-->
-    <nav class="side-nav">
-      <!--nav content-->
-      <div class="nav-content">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="portfolio.html" class="nav-link">Portfolio</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="contact.html" class="nav-link">Links and Contact</a>
-      </div>
-    </nav>
-  </div>
-  <!--nav backgrounds-->
-  <div class="nav-background"></div>
-  <div class="tab-background"></div>
+    	<!--actual navbar-->
+    	<nav class="side-nav">
+      		<!--nav content-->
+      		<div class="nav-content">
+        		<a href="index.html" class="nav-link">Home</a>
+        		<a href="portfolio.html" class="nav-link">Portfolio</a>
+        		<a href="about.html" class="nav-link">About</a>
+        		<a href="contact.html" class="nav-link">Links and Contact</a>
+      		</div>
+    	</nav>
+  	</div>
+  	<!--nav backgrounds-->
+  	<div class="nav-background"></div>
+  	<div class="tab-background"></div>
   
 
-  <!--main content-->
-  <main class="main-content">
+  	<!--main content-->
+  	<main class="main-content">
 
-    <!--grid background-->
-    <div class="grid-background"></div>
+    	<!--grid background-->
+    	<div class="grid-background"></div>
 
-    <!--hero section-->
-    <section class="hero" id="home">
-      <div class="hero-content">
-        <!--logo-->
-        <div class="logo-container">
-          <img src="images/Untitled design (12).png" alt="Your logo" class="logo">
-        </div>
-        <!--name-->
-        <h1 class="name">CERROSIVE</h1>
-
-        <!--role title-->
-        <h2 class="title">Game Designer and Developer</h2>
-      </div>
-    </section>
-
+    	<!--hero section-->
+    	<section class="hero" id="home">
+      		<div class="hero-content">
+        	<!--logo-->
+        		<div class="logo-container">
+          			<img src="images/Untitled design (12).png" alt="Your logo" class="logo">
+        		</div>
+        		<!--name-->
+        		<h1 class="name">CERROSIVE</h1>
+        		<!--role title-->
+        		<h2 class="title">Game Designer and Developer</h2>
+      		</div>
+    	</section>
 
 
-    <!--other content-->
-    <section class="hello-section">
-      <h2 class="hello">Call me <span class="highlight">Cerro</span></h2>
-      <p class="hello-content">I am a game developer proficient in creating narratively complex and visually interesting experiences. I'm here to create and share my stories with the world. This is a placeholder lmao</p>
+
+    	<!--other content-->
+    	<section class="hello-section">
+      		<h2 class="hello">Call me <span class="highlight">Cerro</span></h2>
+      		<p class="hello-content">I am a game developer proficient in creating narratively complex and visually interesting experiences. I'm here to create and share my stories with the world. This is a placeholder lmao</p>
       
-      <a href="about.html" class="text-btn">
-        <div class="light-btn-text">Learn more about me</div>
-      </a>
-    </section>
+      		<a href="about.html" class="text-btn">
+        		<div class="light-btn-text">Learn more about me</div>
+      		</a>
+    	</section>
 
-    <section class="spotlight">
-      <h1 class="spotlight-header">featured project</h1>
-      <h2 class="spotlight-title">Bit Blast</h2>
+    	<section class="spotlight">
+      		<h1 class="spotlight-header">featured project</h1>
+      		<h2 class="spotlight-title">Bit Blast</h2>
 
-      <a href="#bitblast" class="image-btn">
-        <img src="images/A2 cover.png" alt="Bit Blast cover">
-      </a>
+      		<a href="#bitblast" class="image-btn">
+        		<img src="images/A2 cover.png" alt="Bit Blast cover">
+      		</a>
 
-      <p class="description">Small microgame with 3 levels where you shoot down evemies to protect your ship, made for a college assignment</p>
-      <div class="list-container">
-        <ul class="description-list">
-          <li>status: complete!</li>
-          <li>my contributions: everything</li>
-          <li>completed: May 2025</li>
-        </ul>
-      </div>
-    </section>
+      		<p class="description">Small microgame with 3 levels where you shoot down evemies to protect your ship, made for a college assignment</p>
+      		<div class="list-container">
+        		<ul class="description-list">
+          			<li>status: complete!</li>
+          			<li>my contributions: everything</li>
+          			<li>completed: May 2025</li>
+        		</ul>
+      		</div>
+    	</section>
 
 
-    <section class="other-projects">
-      <h1 class="other-header">other projects</h1>
+    	<section class="other-projects">
+      		<h1 class="other-header">other projects</h1>
 
-	  <!--carousel-->
-      <div class="carousel-container">
+	  		<!--carousel-->
+      		<div class="carousel-container">
 
-		<input type="radio" name="carousel" id="slide1" class="carousel-radio" checked>
-		<input type="radio" name="carousel" id="slide2" class="carousel-radio">
-		<input type="radio" name="carousel" id="slide3" class="carousel-radio">
+				<input type="radio" name="carousel" id="slide1" class="carousel-radio" checked>
+				<input type="radio" name="carousel" id="slide2" class="carousel-radio">
+				<input type="radio" name="carousel" id="slide3" class="carousel-radio">
 		
-        <div class="carousel">
-			<!--slide 1-->
-			<div class="slide" id="slide1">
-				<a href="#project1" class="image-btn">
-        			<img src="images/A2 cover.png" alt="project 1">
-      			</a>
+        		<div class="carousel">
+				<!--slide 1-->
+					<div class="slide" id="slide1">
+						<a href="#project1" class="image-btn">
+        				<img src="images/A2 cover.png" alt="project 1">
+      				</a>
+				</div>
+				<!--slide 2-->
+				<div class="slide" id="slide2">
+					<a href="#project2" class="image-btn">
+        				<img src="images/A2 cover.png" alt="project 2">
+      				</a>
+				</div>
+				<!--slide 3-->
+				<div class="slide" id="slide3">
+					<a href="#project3" class="image-btn">
+        				<img src="images/A2 cover.png" alt="project 3">
+      				</a>
+				</div>
 			</div>
-			<!--slide 2-->
-			<div class="slide" id="slide2">
-				<a href="#project2" class="image-btn">
-        			<img src="images/A2 cover.png" alt="project 2">
-      			</a>
-			</div>
-			<!--slide 3-->
-			<div class="slide" id="slide3">
-				<a href="#project3" class="image-btn">
-        			<img src="images/A2 cover.png" alt="project 3">
-      			</a>
-			</div>
-		</div>
 
-		<!--buttons-->
-		<div class="carousel-buttons">
-			<label class="prev" for="slide3">‹</label>
-			<label class="next" for="slide2">›</label>
-		</div>
+			<!--buttons-->
+			<div class="carousel-buttons">
+				<label class="prev" for="slide3">‹</label>
+				<label class="next" for="slide2">›</label>
+			</div>
 
-		<!--indicators-->
-		<div class="indicators">
-			<label for="slide1"></label>
-			<label for="slide2"></label>
-			<label for="slide3"></label>
-		</div>
-      </div>
+			<!--indicators-->
+			<div class="indicators">
+				<label for="slide1"></label>
+				<label for="slide2"></label>
+				<label for="slide3"></label>
+			</div>
 
       
-      <a href="portfolio.html" class="text-btn">
-        <div class="dark-btn-text">View All Projects</div>
-      </a>
-    </section>
+      		<a href="portfolio.html" class="text-btn">
+        		<div class="dark-btn-text">View All Projects</div>
+      		</a>
+    	</section>
 
-    <section class="contact-forward">
-      <h1 class="contact-forward-header">need to contact me? <span class="highlight">no problem!</span></h1>
+    	<section class="contact-forward">
+      		<h1 class="contact-forward-header">need to contact me? <span class="highlight">no problem!</span></h1>
 
-      <a href="contact.html" class="text-btn">
-        <div class="light-btn-text">Socials and contact info this way!</div>
-      </a>
-    </section>
-	  
-  </main>
+      		<a href="contact.html" class="text-btn">
+        		<div class="light-btn-text">Socials and contact info this way!</div>
+      		</a>
+    	</section>
+	  </main>
+	  <!--javascript for carousel-->
+	  <script>
+		  document.querySelectorAll('.carousel-buttons label').forEach(button => {
+			  button.addEventListener('clicl', function() {
+				  const targetId = this.getAttribute('for');
+				  document.getElementById(targetId).checked = true;
+			  });
+		  });
+	  </script>
+  </body>
 </html>
         
 
