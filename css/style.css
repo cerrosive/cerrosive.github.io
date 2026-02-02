@@ -510,8 +510,17 @@ body {
 .carousel {
   display: flex;
   width: 300%; /* 3 slides x 100 */
-  animation: slides 40s infinite linear;
-  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+  animation: auto-slide 15s infinite;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
 }
 .carousel-container:hover .carousel {
   animation-play-state: paused;
@@ -520,6 +529,7 @@ body {
 .slide {
   width: 33.333%;
   flex-shrink: 0;
+  scroll-snap-align: start;
 }
 .slide img {
   width: 100%;
@@ -531,14 +541,14 @@ body {
 /* carousel nav buttons */
 .carousel-buttons {
   position: absolute;
-  top: 50%;
-  width: 100%;
+  bottom: 20px;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
-  transform: translateY(-50%);
-  pointer-events: none;
+  align-items: center;
+  padding: 0 20ppx;
   z-index: 10;
-  padding: 0 10px;
 }
 .carousel-buttons label {
   background: rgba(21, 21, 23, 0.2);
