@@ -564,23 +564,23 @@ body {
   border: 2px solid rgba(184, 198, 207, 1);
 }
 /* navigation */
-#slide1:checked ~ .carousel {
+/* #slide1:checked ~ .carousel {
   transform: translateX(0%);
 }
 #slide2:checked ~ .carousel {
   transform: translateX(-33.333%);
 }
 #slide3:checked ~ .carousel {
-  transform: translateX(-66.666%);
+  transform: translateX(-66.666%); */
 }
 
 #slide1:target ~ .carousel-buttons .radio[href=#slide1], #slide2:target ~ .carousel-buttons .radio[href#slide2], #slide3:target ~ .carousel-buttons .radio[href#slide3] {
   color: #151517;
   transform: scale(1.3);
 }
-.radio:focus, .nav-button:focus {
+/* .radio:focus, .nav-button:focus {
   outline: none;
-}
+} */
 
 
 /* contact forward section */
