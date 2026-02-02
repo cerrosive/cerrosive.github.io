@@ -550,97 +550,68 @@ body {
   padding: 0 20ppx;
   z-index: 10;
 }
-.carousel-buttons label {
-  background: rgba(21, 21, 23, 0.2);
+.nav-btn {
+  background: rgba(21, 21, 23, 0.7);
   color: #b8c6cf;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+  text-decoration: none;
   font-size: 2rem;
   font-weight: bold;
-  pointer-events: auto;
   transition: all 0.3s ease;
-  border: 2px solid rgba(184, 198, 207, 0.3);
+  border: 2px solid rgba(184, 198, 207, 0.5);
+  z-index: 11;
 }
-.carousel-buttons label:hover {
+.nav-btn:hover {
   background: #151517;
-  border: 2px solid rgba(184, 198, 207, 1);
+  border-color: #b8c6cf;
+  transform: scale(1.1);
 }
 /* radio buttons */
-.carousel-radio {
-  display: none;
-  margin-top: 50%;
-}
-#slide1:checked ~ .carousel {
-  animation: none;
-  transform: translateX(0%);
-}
-#slide2:checked ~ .carousel {
-  animation: none;
-  transform: translateX(-33.3%);
-}
-#slide3:checked ~ .carousel {
-  animation: none;
-  transform: translateX(-66.6%);
-}
-/* update nav button targets */
-#slide1:checked ~ .carousel .prev { for: slide3; }
-#slide1:checked ~ .carousel .next { for: slide2; }
-
-#slide2:checked ~ .carousel .prev { for: slide1; }
-#slide2:checked ~ .carousel .next { for: slide3; }
-
-#slide3:checked ~ .carousel .prev { for: slide2; }
-#slide3:checked ~ .carousel .next { for: slide1; }
-/* slide anim */
-@keyframes slide {
-  0%, 28% {
-    transform: translateX(0%);
-  }
-  33%, 61% {
-    transofrm: translateX(-33.333%);
-  }
-  66% 94% {
-    transform: translateX(-66.666%);
-  }
-}
-/* slide indicators */
-.indicators {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
+.radio-buttons {
   display: flex;
   gap: 15px;
-  z-index: 10;
+  /* background: rgba(21, 21, 23, 0.5); */
+  padding: 10px 20px;
+  border-radius: 30px;
 }
-.indicators label {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: rgba(184, 198, 207, 0.4);
-  cursor: pointer;
+.radio {
+  color: rgba(21, 21, 23 0.5);
+  text-decoration: none;
+  font-size: 1.5rem;
   transition: all 0.3s ease;
-  border: 2px solid transparent;
+  display: inline-block;
+  line-height: 1;
 }
-.indicators label:hover {
-  background: rgba(184, 198, 207, 0.8);
+.radio:hover {
+  color: #151517;
   transform: scale(1.2);
 }
-/* highlight active indicator */
-#slide1:checked ~ .indicators label[for="slide1"], #slide2:checked ~ .indicators label[for="slide2"], #slide3:checked ~ .indicators label[for="slide3"] {
-  background: #737385;
-  border-color: #b8c6cf;
-  transform: scale(1.2);
+.radio.active {
+  color: #b8c6cf;
+  transform: scale(1.3);
 }
-
-.carousel {
-  animation: slide 40s infinite linear, fadeIn 1s ease;
+/* navigation */
+.carousel:target {
+  animation: none;
 }
+.carousel:target #slide1 ~ .carousel {
+  transform: translateX(0%);
+}
+@keyframes auto-slide {
+  0%, 33% {
+    transform: translateX(0%);
+  }
+  38%, 71% {
+    transform: translateX(-33.333%);
+  }
+  76%, 100% {
+    transform: translateX(-66.666%);
+  }
 
 
 
