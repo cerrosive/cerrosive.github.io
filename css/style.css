@@ -505,6 +505,7 @@ body {
   ma-width: 95%;
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
 }
 .carousel {
   display: flex;
@@ -517,8 +518,12 @@ body {
 }
 /* slide */
 .slide {
+  width: 33.333%;
+  flex-shrink: 0;
+}
+.slide img {
   width: 100%;
-  height: 500%;
+  height: 500px;
   object-fit: cover;
   display: block;
   transition: transform 0.5s ease;
@@ -530,7 +535,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  tranform: translateY(-50%);
+  transform: translateY(-50%);
   pointer-events: none;
   z-index: 10;
   padding: 0 10px;
@@ -581,14 +586,22 @@ body {
 #slide3:checked ~ .carousel .prev { for: slide2; }
 #slide3:checked ~ .carousel .next { for: slide1; }
 /* slide anim */
-/*@keyframes slide {
-  0% {
-    transform */
+@keyframes slide {
+  0%, 28% {
+    transform: translateX(0%);
+  }
+  33%, 61% {
+    transofrm: translateX(-33.333%);
+  }
+  66% 94% {
+    transform: translateX(-66.666%);
+  }
+}
 /* slide indicators */
 .indicators {
   position: absolute;
   bottom: 30px;
-  left: 50px;
+  left: 50%;
   transform: translateX(-50%);
   display: flex;
   gap: 15px;
@@ -597,7 +610,7 @@ body {
 .indicators label {
   width: 16px;
   height: 16px;
-  border-radius: 50px;
+  border-radius: 50%;
   background: rgba(184, 198, 207, 0.4);
   cursor: pointer;
   transition: all 0.3s ease;
@@ -608,7 +621,7 @@ body {
   transform: scale(1.2);
 }
 /* highlight active indicator */
-#slide1:checked ~ indicators label[for="slide1"], #slide2:checked ~ indicators label[for="slide2"], #slide3:checked ~ indicators label[for="slide3"] {
+#slide1:checked ~ .indicators label[for="slide1"], #slide2:checked ~ .indicators label[for="slide2"], #slide3:checked ~ .indicators label[for="slide3"] {
   background: #737385;
   border-color: #b8c6cf;
   transform: scale(1.2);
