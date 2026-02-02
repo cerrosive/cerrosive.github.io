@@ -503,13 +503,19 @@ body {
   width: 900px;
   max-width: 95%;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
+  padding-bottom: 20px;
   margin: 0 auto;
 }
 .carousel {
   display: flex;
   width: 300%; /* 3 slides x 100 */
-  transition: transform 0.8s ease;
+  animation: slides 20s infinite linear;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.carousel-container:hover .carousel {
+  animation-play-state: paused;
 }
 /* slide */
 .slide {
@@ -517,7 +523,7 @@ body {
   flex-shrink: 0;
 }
 .slide img {
-  width: 100%;
+  width: auto;
   height: 500px;
   object-fit: cover;
   display: block;
@@ -525,17 +531,17 @@ body {
 /* carousel nav buttons */
 .carousel-buttons {
   position: absolute;
-  bottom: 20px;
-  left: 0;
-  right: 0;
+  top: 50%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
+  transform: translateY(-50%);
+  pointer-events: none;
   z-index: 10;
+  padding: 0 10px;
 }
-.nav-btn {
-  background: rgba(21, 21, 23, 0.7);
+.carousel-buttons label {
+  background: rgba(21, 21, 23, 0.2);
   color: #b8c6cf;
   width: 50px;
   height: 50px;
@@ -543,41 +549,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
+  cursor: pointer;
   font-size: 2rem;
   font-weight: bold;
+  pointer-events: auto;
   transition: all 0.3s ease;
-  border: 2px solid rgba(184, 198, 207, 0.5);
-  z-index: 11;
+  border: 2px solid rgba(184, 198, 207, 0.3);
 }
-.nav-btn:hover {
+.carousel-buttons label:hover {
   background: #151517;
-  border-color: #b8c6cf;
-  transform: scale(1.1);
-}
-/* radio buttons */
-.radio-buttons {
-  display: flex;
-  gap: 15px;
-  background: rgba(21, 21, 23, 0.5);
-  padding: 10px 20px;
-  border-radius: 30px;
-}
-.radio {
-  color: rgba(21, 21, 23, 0.5);
-  text-decoration: none;
-  font-size: 1.5rem;
-  transition: all 0.3s ease;
-  display: inline-block;
-  line-height: 1;
-}
-.radio:hover {
-  color: #151517;
-  transform: scale(1.2);
-}
-.radio.active {
-  color: #b8c6cf;
-  transform: scale(1.3);
+  border: 2px solid rgba(184, 198, 207, 1);
 }
 /* navigation */
 #slide1:target ~ .carousel {
@@ -589,7 +570,29 @@ body {
 #slide3:target ~ .carousel {
   transform: translateX(-66.666%);
 }
-
+/* slide indicators */
+.indicators {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  z-index: 10;
+}
+.indicators label {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgba(184, 198, 207, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+.indicators label:hover {
+  background: rgba(184, 198, 207, 0.8);
+  transform: scale(1.2);
+}
 #slide1:target ~ .carousel-buttons .radio[href=#slide1], #slide2:target ~ .carousel-buttons .radio[href#slide2], #slide3:target ~ .carousel-buttons .radio[href#slide3] {
   color: #151517;
   transform: scale(1.3);
