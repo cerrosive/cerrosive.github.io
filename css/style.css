@@ -727,6 +727,11 @@ body {
   background: #151517;
 }
 
+.top-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 
 
 
