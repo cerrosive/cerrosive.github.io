@@ -506,7 +506,6 @@ body {
   overflow-x: hidden;
   overflow-y: visible;
   margin: 0 auto;
-  margin-bottom: 20px;
 }
 .carousel-radio {
   display: none;
@@ -572,6 +571,11 @@ body {
 }
 #slide3:checked ~ .carousel {
   transform: translateX(-66.666%); 
+}
+
+/* put space between button and carousel */
+.button-container {
+  margin-top: 50px;
 }
 
 /* #slide1:target ~ .carousel-buttons .radio[href=#slide1], #slide2:target ~ .carousel-buttons .radio[href#slide2], #slide3:target ~ .carousel-buttons .radio[href#slide3] {
