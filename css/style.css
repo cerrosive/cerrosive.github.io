@@ -622,7 +622,7 @@ body {
 }
 .about-intro {
   align-items: left !important;
-  align-text: left !important;
+  text-align: left !important;
 }
 
 /* SOFTWARE SECTION */
