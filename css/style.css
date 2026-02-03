@@ -718,8 +718,9 @@ body {
 .projects-sidebar {
   flex: 0 0 30%; 
   position: sticky;
-  height: 100%;
-  max-height: 90vh;
+  top: 0;
+  height: 100vh;
+  align-self: stretch;
   overflow-y: auto;
   background: #151517;
 }
