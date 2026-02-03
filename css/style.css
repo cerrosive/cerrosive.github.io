@@ -523,7 +523,7 @@ body {
 /* slide */
 .slide {
   width: 33.333%;
-  height: auto;
+  aspect-ratio: 16/9;
   flex-shrink: 0;
 }
 .slide img {
