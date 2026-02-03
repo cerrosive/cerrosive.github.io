@@ -417,7 +417,18 @@ body {
 }
 
 
-/* ===== MAIN CONTENT ===== */
+
+
+
+
+
+
+
+
+
+/* ===== INDEX.HTML ===== */
+
+
 .main-content {
   width: 100%;
   margin: 0 auto;
@@ -588,6 +599,35 @@ body {
   margin-top: 40px;
   margin-bottom: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== ABOUT.HTML ===== */
+
+/* ABOUT ME SECTION */
+.about-me-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+/* SOFTWARE SECTION */
+.software-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
+
 
 
 
