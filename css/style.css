@@ -625,6 +625,24 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
+/* logos */
+.image-row {
+  display: flex;
+  gap: 20px;
+}
+.image-row img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.logo-light {
+  color: #b8c6cf;
+}
+.logo-grey {
+  color: #737385;
+}
+
 
 
 
