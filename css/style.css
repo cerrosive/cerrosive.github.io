@@ -186,9 +186,9 @@
 /* text container */
 .box {
   width: fit-content;
-  height: fit-content;
+  max-width: 800px;
   padding: 10px;
-  color: #151517;
+  background: #151517;
 }
 
 
