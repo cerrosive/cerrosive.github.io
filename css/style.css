@@ -516,9 +516,6 @@ body {
   width: 300%; /* 3 slides x 100 */
   transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-.carousel-container:hover .carousel {
-  animation-play-state: paused;
-}
 /* slide */
 .slide {
   width: 33.333%;
@@ -571,11 +568,6 @@ body {
 }
 #slide3:checked ~ .carousel {
   transform: translateX(-66.666%); 
-}
-
-/* put space between button and carousel */
-.button-container {
-  margin-top: 50px;
 }
 
 /* #slide1:target ~ .carousel-buttons .radio[href=#slide1], #slide2:target ~ .carousel-buttons .radio[href#slide2], #slide3:target ~ .carousel-buttons .radio[href#slide3] {
