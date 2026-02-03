@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cerrosive — about</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  
+  <body>
+	<!--squiggle anim-->
+  		<svg style="position: absolute; width: 0; height: 0; overflow: hidden;">
+  			<filter id="turbulence-1">
+    			<feTurbulence type="fractalNoise" baseFrequency="0.001" numOctaves="2" data-filterId="3" />
+    			<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+  			</filter>
 
+  			<filter id="turbulence-2">
+    			<feTurbulence type="fractalNoise" baseFrequency="0.0015" numOctaves="2" data-filterId="3" />
+    			<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+  			</filter>
+
+  			<filter id="turbulence-3">
+    			<feTurbulence type="fractalNoise" baseFrequency="0.002" numOctaves="2" data-filterId="3" />
+    			<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+  			</filter>
+
+  			<filter id="turbulence-4">
+    			<feTurbulence type="fractalNoise" baseFrequency="0.0025" numOctaves="2" data-filterId="3" />
+    			<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+  			</filter>
+
+  			<filter id="turbulence-5">
+    			<feTurbulence type="fractalNoise" baseFrequency="0.003" numOctaves="2" data-filterId="3" />
+    			<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+  			</filter>
+		</svg>
+
+  		<!--left navbar-->
+  		<input type="checkbox" id="nav-toggle" class="nav-checkbox">
+
+  		<div class="nav-container">
+    	<!--button for navbar-->
+    	<label for="nav-toggle" class="nav-tab">
+      		<span class="tab-icon">☰</span>
+    	</label>
+
+    	<!--actual navbar-->
+    	<nav class="side-nav">
+      		<!--nav content-->
+      		<div class="nav-content">
+        		<a href="index.html" class="nav-link">Home</a>
+        		<a href="portfolio.html" class="nav-link">Portfolio</a>
+        		<a href="about.html" class="nav-link">About</a>
+        		<a href="contact.html" class="nav-link">Links and Contact</a>
+      		</div>
+    	</nav>
+  	</div>
+  	<!--nav backgrounds-->
+  	<div class="nav-background"></div>
+  	<div class="tab-background"></div>
+  
+
+  	<!--main content-->
+  	<main class="main-content">
+
+    	<!--grid background-->
+    	<div class="grid-background"></div>
+    </main>
+  </body>
+</html>
+        
+
+
+
+
+
+
+
+  
