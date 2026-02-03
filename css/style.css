@@ -492,15 +492,15 @@ body {
 }
 
 /* spotlight section */
-.spotlight {
+/* .spotlight {
   padding-top: 80px;
   padding-bottom: 80px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   min-height: 500px;
   width: 100%;
   text-align: center;
-}
-.spotlight-header {
+} */
+/* .spotlight-header {
   font-size: 3.75rem;
   font-weight: 1000;
   color: #b8c6cf;
@@ -509,14 +509,14 @@ body {
   text-transform: uppercase;
 
   animation: squigglevision 0.7s infinite alternate;
-}
-.spotlight-title {
+} */
+/* .spotlight-title {
   font-size: 3rem;
   font-weight: 1000;
   color: #737385;
   margin-bottom: 10px;
   font-family: 'Space Mono', monospace;
-}
+} */
 .description {
   font-size: 1.5rem;
   font-weight: bold;
@@ -546,7 +546,7 @@ body {
   align-items: center;
   text-align: center;
 }
-.other-header {
+/* .other-header {
   font-size: 3.75rem;
   font-weight: 1000;
   color: #151517;
@@ -555,7 +555,7 @@ body {
   text-transform: uppercase;
 
   animation: squigglevision 0.8s infinite alternate;
-}
+} */
 
 /* carousel */
 .carousel-container {
@@ -637,7 +637,7 @@ body {
 
 
 /* contact forward section */
-.contact-forward {
+/* .contact-forward {
   padding-top: 80px;
   padding-bottom: 80px;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -655,7 +655,7 @@ body {
   text-transform: uppercase;
 
   animation: squigglevision 0.7s infinite alternate;
-}
+} */
 
 
 
