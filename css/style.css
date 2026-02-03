@@ -658,9 +658,9 @@ body {
 .image-row {
   display: flex;
   gap: 10px;
+  justify-content: center;
 }
 .image-row svg {
-  justify-content: center;
   max-height: 150px;
   width: auto;
   object-fit: contain;
