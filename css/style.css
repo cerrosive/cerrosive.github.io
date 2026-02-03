@@ -156,6 +156,35 @@
 
 
 
+/* ===== CONTAINERS ===== */
+
+/* CLEAR CONTAINER */
+.con-clear {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  min-height: 500px;
+  width: 100%;
+  text-align: center;
+}
+.con-dark {
+  background: #151517;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  min-height: 500px;
+  width: 100%;
+  justify-content: center;
+}
+.con-grey {
+  background: #737385;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  min-height: 500px;
+  width: 100%;
+  justify-content: center;
+}
+
+
+
 /* ===== TEXT FORMATS ===== */
 
 /* HEADERS */
@@ -164,6 +193,7 @@
   font-weight: 1000;
   color: #151517;
   margin-top: 10px;
+  margin-bottom: 10px;
   font-family: 'Space Mono', monospace;
   text-transform: uppercase;
 
@@ -174,6 +204,7 @@
   font-weight: 1000;
   color: #737385;
   margin-top: 10px;
+  margin-bottom: 10px;
   font-family: 'Space Mono', monospace;
   text-transform: uppercase;
 
@@ -184,6 +215,7 @@
   font-weight: 1000;
   color: #b8c6cf;
   margin-top: 10px;
+  margin-bottom: 10px;
   font-family: 'Space Mono', monospace;
   text-transform: uppercase;
 
