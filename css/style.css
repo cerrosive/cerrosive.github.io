@@ -666,7 +666,12 @@ body {
   padding-right: 10%;
   width: 100%;
 }
-
+.motivations-container {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 20px;
+  width: 100%
+}
 
 
 
