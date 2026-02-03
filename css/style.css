@@ -658,6 +658,15 @@ body {
   fill: #737385;
 }
 
+/* more info section */
+.more-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
+}
+
 
 
 
