@@ -194,7 +194,8 @@
   font-size: 3rem;
   font-weight: bold;
   color: #737385;
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
   font-family: 'Space Mono', monospace;
 }
 /* PARAGRAPHS */
@@ -417,7 +418,7 @@ body {
 .name {
   font-family: 'superRugged', 'Orbitron', monospace;
   font-size: clamp(5rem, 10vw, 7rem);
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   background: #b8c6cf;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -425,14 +426,6 @@ body {
   letter-spacing: 2px;
   
   animation: squigglevision 0.7s infinite alternate;
-}
-/* role title */
-.title {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #737385;
-  margin-top: 10px;
-  font-family: 'Space Mono', monospace;
 }
 
 
