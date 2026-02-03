@@ -639,10 +639,10 @@ body {
 }
 
 .logo-light path {
-  color: #b8c6cf;
+  fill: #b8c6cf;
 }
 .logo-grey path {
-  color: #737385;
+  fill: #737385;
 }
 
 
