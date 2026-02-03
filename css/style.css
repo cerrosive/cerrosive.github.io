@@ -615,9 +615,14 @@ body {
 
 /* ABOUT ME SECTION */
 .about-me-container {
+  padding-left: 30%;
+  padding-right: 30%;
   display: grid;
   grid-template-columns: 40% 60%;
 }
+.about-intro {
+  align-items: left !important;
+  align-text: left !important;
 
 /* SOFTWARE SECTION */
 .software-container {
