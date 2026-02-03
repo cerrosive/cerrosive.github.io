@@ -155,6 +155,71 @@
 }
 
 
+
+/* ===== TEXT FORMATS ===== */
+
+/* HEADERS */
+.dark-header {
+  font-size: 3.75rem;
+  font-weight: 1000;
+  color: #151517;
+  margin-top: 10px;
+  font-family: 'Space Mono', monospace;
+  text-transform: uppercase;
+
+  animation: squigglevision 0.8s infinite alternate;
+}
+.grey-header {
+  font-size: 3.75rem;
+  font-weight: 1000;
+  color: #737385;
+  margin-top: 10px;
+  font-family: 'Space Mono', monospace;
+  text-transform: uppercase;
+
+  animation: squigglevision 0.8s infinite alternate;
+}
+.light-header {
+  font-size: 3.75rem;
+  font-weight: 1000;
+  color: #b8c6cf;
+  margin-top: 10px;
+  font-family: 'Space Mono', monospace;
+  text-transform: uppercase;
+
+  animation: squigglevision 0.7s infinite alternate;
+}
+/* SUBHEADERS */
+.subheader {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #737385;
+  margin-top: 10px;
+  font-family: 'Space Mono', monospace;
+}
+/* PARAGRAPHS */
+.para-dark {
+  font-size: 1.5rem;
+  color: #151517;
+  font-family: 'Space Mono', monospace;
+}
+.para-grey {
+  font-size: 1.5rem;
+  color: #737385;
+  font-family: 'Space Mono', monospace;
+}
+.para-light {
+  font-size: 1.5rem;
+  color: #b8c6cf;
+  font-family: 'Space Mono', monospace;
+}
+/* highlight */
+.highlight {
+  color: #b8c6cf;
+}
+
+
+
 /* ===== RESET & BASE ===== */
 * {
   margin: 0;
@@ -167,6 +232,8 @@ body {
   background: #0a0a0a;
   color: #f0f0f0;
 }
+
+
 
 /* ===== BACKGROUND ===== */
 .grid-background {
@@ -382,27 +449,6 @@ body {
   width: 100%;
   text-align: justify;
   justify-content: center;
-
-  /* ===== RESPONSIVE DESIGN ===== */
-  @media (max-width: 768px) {
-    .side-nav {
-      width: 200px;
-      left: -200px;
-    }
-
-    .nav-toggle {
-      width: 40px;
-      height: 40px;
-      font-size: 20px;
-    }
-
-    .name {
-      font-size: 2.5rem;
-    }
-  }
-}
-.highlight {
-  color: #b8c6cf;
 }
 .hello {
   font-size: 3.75rem;
