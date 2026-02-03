@@ -618,12 +618,12 @@ body {
   padding-left: 15%;
   padding-right: 15%;
   display: grid;
-  gap: 20px;
+  gap: 40px;
   grid-template-columns: 40% 60%;
 }
 .about-img {
-  height: 100%;
-  width: auto;
+  width: 100%;
+  height: auto;
   
   animation: squigglevision 0.8s infinite alternate;
 }
