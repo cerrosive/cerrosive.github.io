@@ -542,12 +542,7 @@ body {
 
 
 /* other projects section */
-.other-projects {
-  background: #737385;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  min-height: 500px;
-  width: 100%;
+.other-projects-container {
   align-items: center;
   text-align: center;
 }
