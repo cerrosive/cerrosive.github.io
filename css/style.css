@@ -638,10 +638,10 @@ body {
   object-fit: contain;
 }
 
-.logo-light {
+.logo-light path {
   color: #b8c6cf;
 }
-.logo-grey {
+.logo-grey path {
   color: #737385;
 }
 
