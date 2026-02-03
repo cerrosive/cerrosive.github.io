@@ -706,7 +706,7 @@ body {
 
 
 /* ===== PROJECTS.HTML ===== */
-.projects-layout {
+.project-layout {
   display: flex;
   width: 1400px;
   margin: 0 auto;
