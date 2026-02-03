@@ -703,5 +703,35 @@ body {
 
 
 
+
+
+/* ===== PROJECTS.HTML ===== */
+.projects-layout {
+  display: flex;
+  width:100%;
+  margin: 0 auto;
+  padding: 40px 20px;
+  gap: 60px;
+}
+.main-container {
+  flex: 0 0 70%; 
+  min-width: 0; 
+}
+.projects-sidebar {
+  flex: 0 0 30%; 
+  position: sticky;
+  top: 40px; 
+  height: fit-content;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #151517;
+}
+
+
+
+
+
+
+
   
 
