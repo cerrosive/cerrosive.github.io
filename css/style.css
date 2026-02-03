@@ -183,6 +183,13 @@
   width: 100%;
   justify-content: center;
 }
+/* text container */
+.box {
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  color: #151517;
+}
 
 
 
