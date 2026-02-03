@@ -589,7 +589,7 @@ body {
 /* carousel nav buttons */
 .carousel-buttons {
   position: absolute;
-  top: 25%;
+  top: 50%;
   width: 100%;
   display: flex;
   justify-content: space-between;
