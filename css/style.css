@@ -464,24 +464,13 @@ body {
 
 /* ===== CONTENT SECTIONS ===== */
 
-/* hello section */
+/* intro section */
 .intro-content {
   padding-left: 35%;
   padding-right: 35%;
   text-align: justify;
   justify-content: center;
 }
-/* .hello {
-  font-size: 3.75rem;
-  font-weight: 1000;
-  color: #737385;
-  margin-top: 10px;
-  font-family: 'Space Mono', monospace;
-  text-transform: uppercase;
-  text-align: center !important;
-
-  animation: squigglevision 0.8s infinite alternate;
-} */
 .hello-content {
   font-size: 2.15rem;
   font-weight: 300;
@@ -492,31 +481,6 @@ body {
 }
 
 /* spotlight section */
-/* .spotlight {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  min-height: 500px;
-  width: 100%;
-  text-align: center;
-} */
-/* .spotlight-header {
-  font-size: 3.75rem;
-  font-weight: 1000;
-  color: #b8c6cf;
-  margin-top: 10px;
-  font-family: 'Space Mono', monospace;
-  text-transform: uppercase;
-
-  animation: squigglevision 0.7s infinite alternate;
-} */
-/* .spotlight-title {
-  font-size: 3rem;
-  font-weight: 1000;
-  color: #737385;
-  margin-bottom: 10px;
-  font-family: 'Space Mono', monospace;
-} */
 .description {
   font-size: 1.5rem;
   font-weight: bold;
@@ -546,16 +510,6 @@ body {
   align-items: center;
   text-align: center;
 }
-/* .other-header {
-  font-size: 3.75rem;
-  font-weight: 1000;
-  color: #151517;
-  margin-top: 10px;
-  font-family: 'Space Mono', monospace;
-  text-transform: uppercase;
-
-  animation: squigglevision 0.8s infinite alternate;
-} */
 
 /* carousel */
 .carousel-container {
@@ -634,28 +588,6 @@ body {
   margin-top: 40px;
   margin-bottom: 10px;
 }
-
-
-/* contact forward section */
-/* .contact-forward {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  min-height: 500px;
-  width: 100%;
-  text-align: center;
-}
-.contact-forward-header {
-  font-size: 3.75rem;
-  font-weight: 1000;
-  color: #737385;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-family: 'Space Mono', monospace;
-  text-transform: uppercase;
-
-  animation: squigglevision 0.7s infinite alternate;
-} */
 
 
 
