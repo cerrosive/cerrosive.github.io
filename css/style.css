@@ -243,16 +243,22 @@
   font-size: 1.5rem;
   color: #151517;
   font-family: 'Space Mono', monospace;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .para-grey {
   font-size: 1.5rem;
   color: #737385;
   font-family: 'Space Mono', monospace;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .para-light {
   font-size: 1.5rem;
   color: #b8c6cf;
   font-family: 'Space Mono', monospace;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 /* highlight */
 .highlight {
