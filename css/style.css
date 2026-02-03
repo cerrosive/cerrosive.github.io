@@ -631,18 +631,18 @@ body {
   display: flex;
   gap: 10px;
 }
-.image-row img {
+.image-row svg {
   flex: 1;
-  max-height: 100px;
+  max-height: 200px;
   width: auto;
   object-fit: contain;
 }
 
 .logo-light {
-  fill: #b8c6cf;
+  color: #b8c6cf;
 }
 .logo-grey {
-  fill: #737385;
+  color: #737385;
 }
 
 
