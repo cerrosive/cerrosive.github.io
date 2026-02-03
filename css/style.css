@@ -480,7 +480,7 @@ body {
 .other-projects {
   background: #737385;
   padding-top: 80px;
-  padding-bottom: 80px !important;
+  padding-bottom: 80px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   min-height: 500px;
   width: 100%;
@@ -502,9 +502,9 @@ body {
 .carousel-container {
   width: 900px;
   max-width: 95%;
+  min-height: 400px;
   position: relative;
-  overflow-x: hidden;
-  overflow-y: visible;
+  overflow: hidden;
   margin: 0 auto;
 }
 .carousel-radio {
