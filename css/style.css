@@ -505,8 +505,8 @@ body {
   position: relative;
   overflow-x: hidden;
   overflow-y: visible;
-  padding-bottom: 200px;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 .carousel-radio {
   display: none;
