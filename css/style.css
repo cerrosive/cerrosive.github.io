@@ -615,10 +615,17 @@ body {
 
 /* ABOUT ME SECTION */
 .about-me-container {
-  padding-left: 25%;
-  padding-right: 25%;
+  padding-left: 15%;
+  padding-right: 15%;
   display: grid;
+  gap: 20px;
   grid-template-columns: 40% 60%;
+}
+.about-img {
+  height: 100%;
+  width: auto;
+  
+  animation: squigglevision 0.8s infinite alternate;
 }
 .about-intro {
   align-items: left !important;
