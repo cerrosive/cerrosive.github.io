@@ -729,6 +729,13 @@ body {
   padding: 20px;
 }
 
+.button-con {
+  padding-top: 20px;
+}
+.button-con div {
+  font-size: 1.5rem;
+}
+
 .top-container {
   display: grid;
   grid-template-columns: 60% 40%;
@@ -750,7 +757,6 @@ body {
   padding-left: 80px;
   padding-right: 20px;
 }
-
 
 
 
