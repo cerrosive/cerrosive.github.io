@@ -737,12 +737,12 @@ body {
   padding: 20px;
 }
 
-.project-links {
+.project-links a {
   text-decoration: underline;
   text-decoration-color: #737385;
   cursor: pointer;
 }
-.project-links:hover {
+.project-links a:hover {
   color: #b8c6cf;
   text-decoration-color: #b8c6cf;
 }
