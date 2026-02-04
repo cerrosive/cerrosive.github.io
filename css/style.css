@@ -719,7 +719,7 @@ body {
 .spotlight-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px
+  gap: 20px
 }
 .spotlight-text-con {
   padding-left: 80px;
