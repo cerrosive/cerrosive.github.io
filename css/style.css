@@ -723,6 +723,7 @@ body {
   align-self: stretch;
   overflow-y: auto;
   background: #151517;
+  padding: 20px;
 }
 
 .top-container {
