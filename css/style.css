@@ -742,6 +742,10 @@ body {
   text-decoration-color: #737385;
   cursor: pointer;
 }
+.project-links:hover {
+  color: #b8c6cf;
+  text-decoration-color: #b8c6cf;
+}
 .button-con {
   padding-top: 20px;
 }
