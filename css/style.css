@@ -730,9 +730,12 @@ body {
   gap: 40px;
   padding: 80px;
 }
-.cards-container a {
+.cards-container img {
   max-height: 100px;
   aspect-ratio: 16/9;
+}
+.cards-container h2 {
+  font-size: 2rem;
 }
 
 
