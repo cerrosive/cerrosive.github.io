@@ -716,6 +716,11 @@ body {
 
 /* ===== PORTFOLIO.HTML ===== */
 
+.spotlight-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px
+}
 .cards-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
