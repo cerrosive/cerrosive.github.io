@@ -715,11 +715,11 @@ body {
   margin: 0 auto;
 }
 .main-container {
-  flex: 0 0 70%; 
+  flex: 0 0 75%; 
   min-width: 0; 
 }
 .projects-sidebar {
-  flex: 0 0 30%; 
+  flex: 0 0 25%; 
   position: sticky;
   top: 0;
   height: 100vh;
