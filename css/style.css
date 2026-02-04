@@ -737,6 +737,7 @@ body {
 .text-con {
   max-width: 400px;
   height: fit-content;
+  text-align: left;
 }
 
 
