@@ -727,11 +727,11 @@ body {
 .cards-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  padding: 20px;
+  gap: 40px;
+  padding: 80px;
 }
 .cards-container a {
-  max-height: 250px;
+  max-height: 100px;
   aspect-ratio: 16/9;
 }
 
