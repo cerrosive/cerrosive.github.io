@@ -730,9 +730,10 @@ body {
   gap: 40px;
   padding: 80px;
 }
-.cards-container img {
-  height: 100px;
-  width: auto;
+.img-button-wrapper {
+  transform: scale(0.6);
+  transform-origin: center;
+  width: 100%;
 }
 .cards-container h2 {
   font-size: 2rem;
