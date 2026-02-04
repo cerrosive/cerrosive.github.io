@@ -733,8 +733,7 @@ body {
   display: grid;
   grid-template-columns: 60% 40%;
   gap: 20px;
-  /* padding-top: 40px; */
-  align-content: center;
+  padding-top: 40px;
 }
 .image-con img {
   height: 250px;
