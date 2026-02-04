@@ -741,7 +741,9 @@ body {
   text-align: left;
 }
 
-
+.para-container {
+  padding-left: 80px;
+}
 
 
 
