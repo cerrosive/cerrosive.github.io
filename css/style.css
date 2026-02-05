@@ -817,5 +817,40 @@ body {
 
 
 
+
+
+
+
+
+/* ===== CONTACT.HTML ===== */
+
+.socials-container {
+  padding-left: 15%;
+  padding-right: 15%;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 60% 40%;
+}
+.socials-img {
+  width: 100%;
+  height: auto;
+  
+  animation: squigglevision 0.8s infinite alternate;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
