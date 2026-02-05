@@ -829,7 +829,7 @@ body {
   padding-right: 15%;
   display: grid;
   gap: 40px;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
 }
 .socials-img {
