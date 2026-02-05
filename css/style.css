@@ -731,12 +731,17 @@ body {
   padding: 80px;
 }
 .img-button-wrapper {
-  transform: scale(0.9);
+  transform: scale(0.8);
   transform-origin: center;
   width: 100%;
 }
 .cards-container h2 {
   font-size: 2rem;
+}
+.card-list {
+  text-align: left;
+  padding-left: 40px;
+  padding-right: 20px;
 }
 
 
