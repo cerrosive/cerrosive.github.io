@@ -697,6 +697,7 @@ body {
   padding-left: 10%;
   padding-right: 10%;
   width: 100%;
+  gap: 20px;
 }
 .motivations-container {
   padding-left: 10%;
