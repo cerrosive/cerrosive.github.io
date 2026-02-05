@@ -830,6 +830,7 @@ body {
   display: grid;
   gap: 40px;
   grid-template-columns: 60% 40%;
+  align-items: center;
 }
 .socials-img {
   width: 100%;
