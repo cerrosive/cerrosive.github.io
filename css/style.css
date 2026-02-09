@@ -832,7 +832,7 @@ body {
 
 /*alt image cons*/
 .image-con-2 {
-  height: 100%;
+  height: 300px;
   width: auto;
   border: 4px solid #b8c6cf; 
 }
