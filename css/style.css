@@ -824,14 +824,14 @@ body {
   grid-template-columns: 65% 35%;
   gap: 10px;
 }
-.left-img-con img {
+.left-img-con {
   display: grid;
   grid-template-columns: 35% 65%;
   gap: 10px;
 }
 
 /*alt image cons*/
-.image-con-2 {
+.image-con-2 img {
   height: 300px;
   width: auto;
   border: 4px solid #b8c6cf; 
