@@ -868,8 +868,8 @@ body {
 }
 
 .center-content {
-  width: 500px;
-  justify-content: center;
+  /*width: 500px;*/
+  margin: 0 auto;
 }
 
 
