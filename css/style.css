@@ -824,7 +824,7 @@ body {
   grid-template-columns: 65% 35%;
   gap: 10px;
 }
-.left-img-con {
+.left-img-con img {
   display: grid;
   grid-template-columns: 35% 65%;
   gap: 10px;
