@@ -851,7 +851,7 @@ body {
   image-rendering: crisp-edges;
 }
 .image-con-4 img {
-  height: 300px;
+  height: 200px;
   width: auto;
 
   image-rendering: pixelated;
@@ -859,7 +859,7 @@ body {
   image-rendering: crisp-edges;
 }
 .image-con-5 img {
-  height: 50px;
+  height: 75px;
   width: auto;
 
   image-rendering: pixelated;
