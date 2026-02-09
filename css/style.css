@@ -867,6 +867,10 @@ body {
   image-rendering: crisp-edges;
 }
 
+.center-content {
+  justify-content: center;
+}
+
 
 
 
