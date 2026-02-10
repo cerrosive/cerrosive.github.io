@@ -822,7 +822,7 @@ body {
 .right-img-con {
   display: grid;
   grid-template-columns: 65% 35%;
-  gap: 10px;
+  gap: 10px !important;
   padding-top: 5px;
   padding-bottom: 5px;
   align-items: center;
@@ -830,7 +830,15 @@ body {
 .left-img-con {
   display: grid;
   grid-template-columns: 35% 65%;
-  gap: 10px;
+  gap: 10px !important;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  align-items: center;
+}
+.right-img-con-v2 {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 10px !important;
   padding-top: 5px;
   padding-bottom: 5px;
   align-items: center;
@@ -838,7 +846,7 @@ body {
 .left-img-con-v2 {
   display: grid;
   grid-template-columns: 45% 55%;
-  gap: 10px;
+  gap: 10px !important;
   padding-top: 5px;
   padding-bottom: 5px;
   align-items: center;
