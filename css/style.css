@@ -888,7 +888,11 @@ body {
   border: 4px solid #b8c6cf; 
 }
 .image-con-7 img {
-  height: 200px;
+  height: 350px;
+  width: auto;
+}
+.image-con-8 img {
+  height: 400px;
   width: auto;
 }
 
