@@ -835,6 +835,14 @@ body {
   padding-bottom: 5px;
   align-items: center;
 }
+.left-img-con-v2 {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  align-items: center;
+}
 
 /*alt image cons*/
 .image-con-2 img {
