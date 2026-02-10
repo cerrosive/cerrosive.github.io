@@ -883,6 +883,11 @@ body {
   image-rendering: crisp-edges;
 }
 
+/*list container*/
+.li-con {
+  padding-left: 10px;
+}
+
 
 
 
