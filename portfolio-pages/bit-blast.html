@@ -259,12 +259,33 @@
 					</div>
 
 					<p class="para-grey">Building the prototype was very simple, I had coded simple space invader-style games before, plus I already had the code for the cursor-based aim from a previous project, so this wasn't difficult to implement.</p>
-					<p class="para-grey">I created a simple set up with a playe, enemy, and a bullet pool. the player i made a parent with a player sprite component and shoot point component, and in the code used my previously made cursor-based aiming to make the entire player parent rotate in the direction of the cursor.</p>
-					<p class="para-grey">later on for level difficulty i would make different parents to group enemies together for each level, and they would activate and deactivate according to what level the player is currently on.</p>
-					<p class="para-grey">the minigame and the intermission are made as separate scenes, as part of the project was learning about scene switching. the gameManager controls all variables that need to be carried across scenes.</p>
+					<p class="para-grey">I created a simple set up with a player, enemy, and a bullet pool. the player I made a parent with a player sprite component and shoot point component, and in the code used my previously made cursor-based aiming to make the entire player parent rotate in the direction of the cursor.</p>
+					<p class="para-grey">Later on for level difficulty I would make different parents to group enemies together for each level, and they would activate and deactivate according to what level the player is currently on.</p>
+					<p class="para-grey">The minigame and the intermission are made as separate scenes, as part of the project was learning about scene switching. the gameManager controls all variables that need to be carried across scenes.</p>
+					<p class="para-grey">From there it was quite simple to make all the sprite and animation assets and replace the placeholder sprites.</p>
 
 					<h2 class="subheader">animation setup</h2>
 					
+					<p class="para-grey">Most of the animation setup is pretty simple:</p>
+					<div class="li-con">
+						<ul class="para-grey">
+							<li>play on start for timer, shoot indicator, default ship anims</li>
+							<li>timed animation for the open/close animation</li>
+							<li>played on met condition for enemy death animations</li>
+						</ul>
+					</div>
+
+					<div class="right-img-con-v2">
+						<div>
+							<p class="para-grey">For the intermission animations it took a bit more setup. I needed the game to open up with just the countdown, but for after a minigame round I needed it to play win/lose first before the countdown.</p>
+							<p class="para-grey">I achieved this by creating an empty animation as the default animation on entry, then used boolean parameters to determin which animation should play.</p>
+							<p class="para-grey">When the game first starts the parameter for the countdown is active so it is immediately played, but once the minigames start this boolean is disabled, and the win/lose booleans then determine which respective animation plays when returning to the intermission before transitioning back to the countdown.</p>
+						</div>
+
+						<div class="image-con">
+							<img src="../images/bit blast images/intermission anim.png" alt="animation setup for intermission">
+						</div>
+					</div>
 				</div>
 			</section>
 		</div>
