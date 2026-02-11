@@ -399,9 +399,51 @@
 						</button>
 
 					<div id="dropdown3" class="dropdown-content" aria-hidden="true">
-					
-					<p class="para-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				
+
+						<h2 class="subheader">I had created a list of everything I needed to code for the project to ensure I stay organised:</h2>
+						<div class="li-con">
+							<ul class="para-grey">
+								<li>player controls (movement, shooting, etc.)</li>
+								<li>vent mechanics</li>
+								<li>separate rooms via doors</li>
+								<li>death mechanics</li>
+								<li>terminal data collection mechanic</li>
+								<li>enemy AI</li>
+							</ul>
+						</div>
+						<p class="para-grey">Unfortunately for the last two I couldn't properly make them if at all due to time constraints in the project, so they were left out in favour of making the environment functional.</p>
+
+						<p class="para-grey">First off were all the player mechanics to go with the animations I previously made. These are decently simple for the mostpart, just the normal walk, run, jump, climb, crawl, etc.</p>
+						<p class="para-grey">What I did have to put more thought into is the shooting mechanics, which I wanted to have cursor-based aim, essentially the bullet is shot in the direction of where you click, something I had not done before.</p>
+						<p class="para-grey">I managed to get this mechanic working through this bit of code:</p>
+
+						<img src="../images/redline images/Screenshot 2026-02-11 172553.png" alt="mouse position code">
+
+						<p class="para-grey">For vent mechanics I needed to consider these two aspects:</p>
+						<div class="li-con">
+							<ul class="para-grey">
+								<li>leaving and entering the vent</li>
+								<li>change in movement mechanics</li>
+							</ul>
+						</div>
+						<p class="para-grey">Getting in and out of the vent was simple, I just used a collider to detect when the player is entering/exiting, then it would teleport the player to the correct spot. I also coded the visibility of each area to change so you couldnt see outside the vent when inside it, and vise versa.</p>
+						<p class="para-grey">Teleporting also activated a change in state in the player's script to change the mechanics. This is the code for that:</p>
+
+						<img src="../images/redline images/vent code.png" alt="vent state code">
+
+						<p class="para-grey">For the separate rooms I used a similar teleporting mechanic with the vents, only you get teleported to the room when pressing E while in the vicinity of the door. Very simple, just changing the player's position in the map.</p>
+						<p class="para-grey">And for death mechanics I ended up only having time for the mechanic regarding death pits, which due to time just makes the player inactive, though if I had more time I would've implemented a respawn system.</p>
+
+						
+						<h2 class="subheader">animation setup</h2>
+
+						<p class="para-grey">The player has a lot of animations which required a large complicated setup:</p>
+
+						<img src="../images/redline images/redline animation setup.png" alt="player animation setup">
+
+						<p class="para-grey">Most of these were just simple transitions from idle and back, for the crawling and climbing ones I had to make custom idle animations for them using a single frame from each, since you could pause movement while in those states. And any state controls things like the jumping system with handling the transition from the jumping to falling animations, and also getting hit or dying.</p>
+									
+			
 					<!--drop finish-->
 					</div>
 					</div>
