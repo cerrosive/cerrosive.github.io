@@ -100,6 +100,16 @@
 					<h2 class="grey-header">game design</h2>
 					<p class="para-light">NOTE: this is currently only work made for assignments. I hope to one day make this game into a low-poly 3D shooter that is narrative-driven, however at the time of working on this project we were only working on 2D, hence all this work is in 2D pixel.</p>
 
+					<!--drop down container-->
+					<div class="dropdown">
+
+						<!--drop down button-->
+						<button class="dropdown-button" aria-expanded="false" aria-controls="dropdown1" onclick="toggleDropdown(this)">
+							Read More
+						</button>
+
+					<div id="dropdown1" class="dropdown-content" aria-hidden="true">
+						
 					<h2 class="subheader">designing the game</h2>
 					<p class="para-grey">Through the design process while making the character and building the lore, I already knew what aeshtetic im going for here. For this 2D platformer level, I wanted to create an underground run-down facility, considering/including the following:</p>
 					<div class="li-con">
@@ -170,6 +180,12 @@
 					</div>
 
 					<p class="para-grey">Then there's the core. It's been mentioned here and there, but what exactly is it? The core, also known as the Mother, is the source of the perfect humans. The original experiment that resulted in disaster had created a large mutation, a creature far beyond what was intended by the original project and a monster way past the control of the A.E.C. It is the largest and most dangerous creature of all, and has the ability to create more creatures that stem off of it, the only way these perfect humans can multiply, and hence its title "the Mother". It resides in the original holding chamber where the experiment took place, now transformed into a large nest. The employees are fully unaware of the details of this "core", and even Nullpoint's knowledge on it is limited due to little data kept about it.</p>
+				
+					<!--drop finish-->
+					</div>
+					</div>
+
+
 				</div>
 			</section>
 
@@ -177,6 +193,8 @@
 			<section class="con-grey">
 				<div class="para-container">
 					<h2 class="dark-header">art and visuals</h2>
+
+					
 
 					<h2 class="subheader-dark">concept art</h2>
 					<p class="para-dark">Based on the story I had created I knew what kind of aesthetic I wanted. I was thinking dark, industrial, apocalyptic, something along those lines.</p>
@@ -328,5 +346,18 @@
 			</div>
 		</aside>
     </main>
+
+
+	<!--dropdown code-->
+	<script>
+	function toggleDropdown(button) {
+  		const isExpanded = button.getAttribute('aria-expanded') === 'true';
+  		const content = document.getElementById(button.getAttribute('aria-controls'));
+  
+  		// Toggle states
+  		button.setAttribute('aria-expanded', !isExpanded);
+  		content.setAttribute('aria-hidden', isExpanded);
+	}
+	</script>
   </body>
 </html>
