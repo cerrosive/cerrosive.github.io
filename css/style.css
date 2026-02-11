@@ -768,6 +768,7 @@ body {
 .dropdown-button {
   background-color: #b8c6cf;
   color: #737385;
+  font-family: 'Space Mono', monospace;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
