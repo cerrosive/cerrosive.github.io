@@ -897,9 +897,9 @@ body {
   padding-bottom: 5px;
   align-items: center;
 }
-fifty-fifty-con {
+.fifty-fifty-con {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
   gap: 10px !important;
   padding-top: 5px;
   padding-bottom: 5px;
