@@ -121,11 +121,11 @@
 					<div class="dropdown">
 
 						<!--drop down button-->
-						<button class="dropdown-button" aria-expanded="false" aria-controls="dropdown4" onclick="toggleDropdown(this)">
+						<button class="dropdown-button" aria-expanded="false" aria-controls="dropdown1" onclick="toggleDropdown(this)">
 							Read More
 						</button>
 
-					<div id="dropdown4" class="dropdown-content" aria-hidden="true">
+					<div id="dropdown1" class="dropdown-content" aria-hidden="true">
 
 					
 					<p class="para-grey">For our second major assignment we were tasked with building a microgame, similar to warioware. this makes the task simple, all i need is a simple minigame with up to 3 levels that happens within the span of roughly 20 seconds, give or take.</p>
@@ -419,6 +419,20 @@
 			</div>
 		</aside>
     </main>
+
+
+	<!--dropdown code-->
+	<script>
+	function toggleDropdown(button) {
+  		const isExpanded = button.getAttribute('aria-expanded') === 'true';
+  		const content = document.getElementById(button.getAttribute('aria-controls'));
+  
+  		// Toggle states
+  		button.setAttribute('aria-expanded', !isExpanded);
+  		content.setAttribute('aria-hidden', isExpanded);
+	}
+	</script>
+	  
   </body>
 </html>
         
