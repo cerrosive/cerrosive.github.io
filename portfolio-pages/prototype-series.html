@@ -95,26 +95,137 @@
 			<!--section 1-->
 			<section class="con-dark">
 				<div class="para-container">
-					<h2 class="subheader">game design</h2>
-					<p class="para-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					
+					<h2 class="grey-header">Prototype project 1</h2>
+
+					<div class="fifty-fifty-con">
+						<div>
+							<h2 class="subheader">overview</h2>
+							<div class="li-con">
+								<ul class="para-grey">
+									<li>level concepts</li>
+									<li>lore and worldbuilding</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="image-con-7">
+							<img src="../images/prototype game screenshot.png" alt="prototype 1 preview">
+						</div>
+					</div>
+
+
+					<!--drop down container-->
+					<div class="dropdown">
+
+						<!--drop down button-->
+						<button class="dropdown-button" aria-expanded="false" aria-controls="dropdown1" onclick="toggleDropdown(this)">
+							Read More
+						</button>
+
+					<div id="dropdown1" class="dropdown-content" aria-hidden="true">
+					
+
+						<h2 class="subheader">brainstorming</h2>
+						<p class="para-grey">This was the very first digital game project we ever worked on in the BTEC. We were tasked with designing a game idea and creating a prototype.</p>
+
+						<div class="fifty-fifty-con">
+							<div>
+								<p class="para-grey">When I was brainstorming ideas, I was particularly intrigued by the brief's fake name for the "company" we were designing the game for, Polybius. A quick google search and turns out Polybius is an urban legend about an arcade game. I decided to base my ideas off of this.</p>
+								<p class="para-grey">The urban legend centers around ideas/themes of psychological horror causing players to have amnesia, seizures, night terrors, hallucinations, and the game was said to be very addictive. As a result my game idea centers around similar ideas or themes.</p>
+							</div>
+
+							<div class="image-con-2">
+								<img src="../images/prototype series images/polybius mindmap.png" alt="prototype brainstorming mindmap">
+							</div>
+						</div>
+
+						<p class="para-grey">References included in this mindmap are:</p>
+						<div class="li-con">
+							<ul class="para-grey">
+								<li>Hollow Knight</li>
+								<li>Limbo</li>
+								<li>Narrow Dark Cave 2D Pixel Game</li>
+							</ul>
+						</div>
+						<p class="para-grey">In the end, I went for a survival-based game with a sanity mechanic, where the player must survive in the current map for a certain period of time while having to handle enemies coming at them as well as keeping their own sanity in check.</p>
+
+						<h2 class="subheader">designing the game</h2>
+						<div class="left-img-con-v2">
+							<div class="image-con-2">
+								<img src="../images/prototype series images/polybius map concepts.png" alt="map concepts">
+							</div>
+
+							<div>
+								<p class="para-grey">Here's a list of the features and mechanics I planned to include:</p>
+								<div class="li-con">
+									<ul class="para-grey">
+										<li>small map area</li>
+										<li>environmental hazards (pits, spikes, etc.)</li>
+										<li>enemy random spawns with pathfinding</li>
+										<li>sanity mechanic in place of health</li>
+										<li>a timer to measure how long the player has survived</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<p class="para-grey">I drew up a couple map concepts to decide what would be best. I wanted to keep it simple as this was my first project for my education, while still considering the impacts of the map space for the game.</p>
+						<p class="para-grey">I settled on concept #1 for my project.</p>
+
+						<h2 class="subheader">prototyping</h2>
+						<div class="right-img-con-v2">
+							<div>
+								<p class="para-grey">Creating the prototype was for the mostpart simple, I didn't have to care about graphics so everything is made up of simple shapes and UI.</p>
+								<p class="para-grey">The enemies have 4 sites they can spawn from at random, they chase the player but only exist for a certain period of time.</p>
+								<p class="para-grey">There are also spikes and pits the player must avoid in order to survive.</p>
+								<p class="para-grey">Most importantly I used a UI slider to create the sanity bar, which the player must keep up otherwise they will lose. This can be done via "concentration", however the player is locked from moving while doing so, requiring a bit of strategising.</p>
+							</div>
+
+							<div class="image-con-2">
+								<img src="../images/prototype game screenshot.png" alt="prototype">
+							</div>
+						</div>
+
+						<h2 class="subheader">coding</h2>
+						<p class="para-grey">Most of the code is simple and minimal, such as the movement code. What I did struggle more with was the pathfinding as I decided to use that over a basic follow script, however this proved to be simpler than expected through the A* Pathfinding Project.</p>
+						<p class="para-grey">The project provides tools and scripts that allow for simpler setup of pathfinding, I chose to use the more coding-heavy method to learn more about C# and pathfinding.</p>
+						<p class="para-grey">The only significant issue was the speed, as I accidentally set it too low making it look like it wasn't working, but this was an easy fix simply by changing the speed to higher.</p>
+						<p class="para-grey">(Note I'm not including the code here because it is not mine, it was learned through a tutorial for the pathfinding project which can be found on YouTube)</p>
+
+						<div class="fifty-fifty-con">
+							<div>
+								<p class="para-grey">There's also a simple script for the timer which helped me get a better understanding of UI coding.</p>
+							</div>
+
+							<div>
+								<img src="../" alt="timer code">
+							</div>
+						</div>
+				
+
+					<!--drop finish-->
+					</div>
+					</div>
+					
+				
 				</div>
 			</section>
 
 			<!--section 2-->
-			<section class="con-grey">
+			<!--<section class="con-grey">
 				<div class="para-container">
 					<h2 class="subheader-dark">art and visuals</h2>
 					<p class="para-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
-			</section>
+			</section>-->
 
 			<!--section 3-->
-			<section class="con-dark">
+			<!--<section class="con-dark">
 				<div class="para-container">
 					<h2 class="subheader">code and technical implementation</h2>
 					<p class="para-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
-			</section>
+			</section>-->
 		</div>
 
 		
@@ -140,5 +251,19 @@
 			</div>
 		</aside>
     </main>
+
+
+	<!--dropdown code-->
+	<script>
+	function toggleDropdown(button) {
+  		const isExpanded = button.getAttribute('aria-expanded') === 'true';
+  		const content = document.getElementById(button.getAttribute('aria-controls'));
+  
+  		// Toggle states
+  		button.setAttribute('aria-expanded', !isExpanded);
+  		content.setAttribute('aria-hidden', isExpanded);
+	}
+	</script>
+	  
   </body>
 </html>
