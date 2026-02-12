@@ -364,6 +364,32 @@
 					<p class="para-grey">The minigame and the intermission are made as separate scenes, as part of the project was learning about scene switching. the gameManager controls all variables that need to be carried across scenes.</p>
 					<p class="para-grey">From there it was quite simple to make all the sprite and animation assets and replace the placeholder sprites.</p>
 
+
+					<h2 class="subheader">coding</h2>
+					<p class="para-grey">Code was overall incredibly simple and minimal, I only needed to make the following:</p>
+					<div class="li-con">
+						<ul class="para-grey">
+							<li>scene transitions</li>
+							<li>aim and shooting</li>
+							<li>win/lose and health</li>
+							<li>enemy death</li>
+							<li>levels</li>
+						</ul>
+					</div>
+					<p class="para-grey">Scene transitioning was one of the main new things I learned in this project, it turned out to be quite simple, just having a single master script that carries over with any variables that need to be shared. The most important part is ensuring the game manager component isnt destroyed when changing scenes so it can carry between them.</p>
+					<img src="../images/bit blast images/game manager carry code.png" alt="game manager carry code">
+
+					<p class="para-grey">I also stated before that this game has cursor-based aim, this was achieved through code I had made in my previous redline project, altered slightly to rotate the sprite as well in the direction.</p>
+					<img src="../images/bit blast images/aim and rotate code.png" alt="aim and rotate code">
+
+					<p class="para-grey">Win, lose and health are easily handled through variables carried between scenes. Simply put a variable is set depending on if you defeat all the enemies or not, this then carries over to the intermission scene which determines what animation plays and how much health you have.</p>
+					<p class="para-grey">The health sprites are controlled using a filled-type image, when losing the fill percentage is decreased.</p>
+					<img src="../images/bit blast images/win and lose code.png" alt="win and lose code">
+					<p class="para-grey">These variables also determine if you progress onto the next level (win) or reset back to the first level (lose). I have 3 game objects to contain the enemies for each respective level, these are deactivated and activated depending on what level it currently is.</p>
+
+					<p class="para-grey">Enemy death is very simple, just plays the animation then deactivates the enemy object.</p>
+
+						
 					<h2 class="subheader">animation setup</h2>
 					
 					<p class="para-grey">Most of the animation setup is pretty simple:</p>
