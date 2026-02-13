@@ -565,7 +565,6 @@ body {
   position: relative;
   overflow: hidden;
   margin: 0 auto;
-  align-items: center;
 }
 .carousel-radio {
   display: none;
@@ -574,6 +573,7 @@ body {
 .carousel {
   display: flex;
   width: 300%; /* 3 slides x 100 */
+  align-items: center;
   transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 /* slide */
