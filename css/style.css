@@ -565,6 +565,7 @@ body {
   position: relative;
   overflow: hidden;
   margin: 0 auto;
+  align-items: center;
 }
 .carousel-radio {
   display: none;
